@@ -55,8 +55,8 @@
     border-radius: 10%;
     color: black;
     cursor: pointer;
-    display: inline-block;
-    float: right;
+    display: flex;
+    float: flex-end;
 }
 
 #option-trashcan{
@@ -84,7 +84,7 @@
 
 #option-title{
     position: relative;
-    left: 26.5%;
+    left: 29%;
     font-size: 2rem;
     margin: 10px;
 }
@@ -104,14 +104,15 @@
     display: block;
 }
 
-@media (max-width: 450px){
+@media (max-width: 426px){
     .device-option-container{
-        width: 380px;
+        width: 95%;
     }
     #option-title{
         left: 5%;
     }
     #resolution-selector{
         background-color: rgb(213, 208, 208);
+        width: auto;
     }
 }
