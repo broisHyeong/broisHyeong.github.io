@@ -7,38 +7,48 @@
   font-size: 12px;
 }
 
+.container {
+  margin: 0 15vw;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
 :root {
   --color-main-blue: #00B0FF;
   --color-light-blue: #81D4FA;
   --color-background-beige: #F8F4EC;
   --color-background-black: #000000;
+  --space-mobile-header: 60px;
+  --space-mobile-menubar: 50px;
 }
 
 iframe {
-  background-color: var(--color-background-black);
+  /* background-color: var(--color-background-black); */
   display: block;
 }
 
-.empty_header {
-  height: 60px;
-}
+/* .empty_header {
+  height: var(--space-mobile-header);
+} */
 
 .header {
   position: fixed;
   top: 0;
 }
 
-.empty_menubar {
-  height: 50px;
-}
+/* .empty_menubar {
+  height: var(--space-mobile-menubar);
+} */
 
 .menubar {
   position: fixed;
-  bottom: 0
+  bottom: 0;
 }
 
 @media screen and (max-width: 426px) {
   .container {
-    padding: 0 10vw;
+    margin: 0 10vw;
+    padding-top: 60px;
+    padding-bottom: 50px;
   }
 }

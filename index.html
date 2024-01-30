@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/default.css">
+  <!-- <link rel="stylesheet" href="css/default.css"> -->
   <link rel="stylesheet" href="css/index.css">
   <title>Infinity SPACE</title>
 </head>
 <body>
-  <div class="empty_header">
+  <!-- <div class="empty_header">
   <iframe src="./header.html" class="header" frameborder="0" width="100%" height="60px"></iframe>
-</div>
+</div> -->
   <div class="container">
     <div class="container-top"><br><br>
       <div class="first">영화, 시리즈 등을<br> 무제한으로</div><br>
@@ -61,11 +61,36 @@
       <div class="first">즐겨 보는 콘텐츠를 저장해<br>
       오프라인으로 시청하세요</div>
       <div class="save_explain">비행기, 기차, 잠수함. 어디서든 시청하세요.</div>
+      <div id="saveimg">
+        <img id="save" src="img/indexsave.jpg">
+      </div>
+      <div id="download">
+        <img id="downloadimg" src="img/indexdownload.jpg"></img>
+        <div id="content">기묘한 이야기
+          <p>저장 중 ...</p>
+        </div>
+      </div>
     </div>
   </div>
+  <div class="container-bottom1">
+    <div class="first">자주 묻는 질문</div>
+    <ul>
+      <li><button class="q-list">인피니트에서 어떤 콘텐츠를 시청할 수<br>있나요?</button></li>
+      <li><button class="q-list">인피니트란 무엇인가요?</button></li>
+      <li><button class="q-list">인피니트 요금은 얼마인가요?</button></li>
+      <li><button class="q-list">어디에서 시청할 수 있나요?</button></li>
+      <li><button class="q-list">멤버십을 해지하려면 어떻게 하나요?</button></li>
+      <li><button class="q-list">아이들이 인피니트를 봐도 좋을까요?</button></li>
+    </ul>
   </div>
-  <div class="empty_menubar">
-  <iframe src="./menubar.html" class="menubar" frameborder="0" width="100%" height="50px"></iframe>
-</div>
+  <div class="container-bottom2">
+    <div class="bottom2-content">시청할 준비가 되셨나요? 멤버십을<br>
+    등록하거나 재시작하려면 이메일 주소를<br>입력하세요.</div>
+    <div>
+      <input type="email"  id="form" placeholder="이메일 주소">
+    </div>
+    <button>시작하기 >
+  </div>
+  </div>
 </body>
 </html>

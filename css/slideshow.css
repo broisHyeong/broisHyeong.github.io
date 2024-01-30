@@ -71,6 +71,7 @@ input[type="radio"] {
 }
 .c_topno{
   padding-right: 3%;
+  font-family: 'Courier New', Courier, monospace;
 }
 .c_label {
   display: inline-block;

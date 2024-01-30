@@ -1,29 +1,64 @@
 @import url(./default.css);
 @import url(./scroll.css);
 
+/* 전체 적용 */
 ul {
   list-style: none;
 }
 
-.poster_img {
+p {
+  font-size: 15px;
+}
+
+.tag {
+  font-size: 15px;
+  margin: 0 2px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.age {
+  background: #ffc800;
+}
+
+.container h1 {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+/* html 태그 순서대로 위에서 아래로 */
+/* .poster_img {
   width: 100%;
   display: block;
+} */
+
+.main_teaser {
+  margin: 5vh 0;
+}
+
+.teaser_video iframe {
+  width: 100%;
+  height: 60vh;
 }
 
 .main_title {
   display: flex;
   justify-content: space-between;
-  
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  padding-right: 4vw;
 }
 
-.main_title h1 {
-  vertical-align: middle;
+.title_text {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
 }
 
 .title_heart {
   text-align: center;
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 3fr 1fr;
 }
 
 .heart_btn {
@@ -32,8 +67,12 @@ ul {
   color: var(--color-main-blue);
 }
 
+.heart_btn i {
+  vertical-align: bottom;
+}
+
 .title_heart p {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .main_rate {
@@ -67,6 +106,20 @@ ul {
 }
 /*  */
 
+.info_ul {
+  margin:3vh 0;
+}
+
+.info_ul li {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* border: 1px solid; */
+}
+
+.info_ul p {
+  font-size: 15px;
+}
+
 .main_story{
   width: 100%;
   text-overflow: ellipsis;
@@ -75,36 +128,59 @@ ul {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  margin: 5vh 0;
 }
 
-.main_story:hover {
+/* .main_story:hover {
   text-overflow: visible;
+} */
+
+.recommend h1 {
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 426px) {
+  p {
+    font-size: 13px;
+  }
+
+  .tag {
+    font-size: 10px;
+    margin: 0 1px;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
   .container h1 {
-    margin: 3vh 0;
     font-size: 16px;
+  }
+
+  .teaser_video iframe {
+    width: 100%;
+    height: 30vh;
   }
 
   .heart_btn {
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--color-main-blue);
+  }  
+
+  .main_title {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-right: 4vw;
+  }
+
+  .title_heart p {
+    font-size: 10px;
   }
 
   .main_rate label {
     font-size: 16px;
-  }
-
-  .info_ul {
-    margin:3vh 0;
-  }
-
-  .info_ul li {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    /* border: 1px solid; */
   }
 
   .info_ul p {
@@ -115,7 +191,9 @@ ul {
     margin: 3vh 0;
   }
 
-  .main_teaser {
-    margin: 5vh 0;
+  .recommend h1 {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    font-size: 16px;
   }
 }
