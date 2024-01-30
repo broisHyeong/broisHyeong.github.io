@@ -1,7 +1,22 @@
 @import url(./default.css);
+@import url(./scroll.css);
 
 ul {
   list-style: none;
+}
+
+p {
+  font-size: 15px;
+}
+
+.container h1 {
+  vertical-align: middle;
+}
+
+.heart_btn {
+  width: 100%;
+  font-size: 25px;
+  color: var(--color-main-blue);
 }
 
 .poster_img {
@@ -12,12 +27,23 @@ ul {
 .main_title {
   display: flex;
   justify-content: space-between;
+  
+}
+
+.main_title h1 {
+  vertical-align: middle;
 }
 
 .title_heart {
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.heart_btn {
+  width: 100%;
+  font-size: 30px;
+  color: var(--color-main-blue);
 }
 
 .title_heart p {
@@ -53,6 +79,21 @@ ul {
 .main_rate label:hover ~ label{
   text-shadow: 0 0 0 var(--color-main-blue);
 }
+/*  */
+
+.info_ul {
+  margin:3vh 0;
+}
+
+.info_ul li {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* border: 1px solid; */
+}
+
+.info_ul p {
+  font-size: 15px;
+}
 
 .main_story{
   width: 100%;
@@ -62,30 +103,28 @@ ul {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  margin: 5vh 0;
 }
 
-.main_story:hover {
+/* .main_story:hover {
   text-overflow: visible;
+} */
+
+.main_teaser {
+  margin: 5vh 0;
 }
 
 @media screen and (max-width: 426px) {
+  p {
+    font-size: 13px;
+  }
+
   .container h1 {
-    margin: 3vh 0;
     font-size: 16px;
   }
 
   .main_rate label {
     font-size: 16px;
-  }
-
-  .info_ul {
-    margin:3vh 0;
-  }
-
-  .info_ul li {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    /* border: 1px solid; */
   }
 
   .info_ul p {
@@ -94,34 +133,5 @@ ul {
 
   .main_story {
     margin: 3vh 0;
-  }
-
-  .main_teaser {
-    margin: 5vh 0;
-  }
-
-  .recommend {
-    margin-bottom: 10vh;
-  }
-
-  .recommend_contents {
-    display: flex;
-    justify-content: space-between;
-    overflow: scroll;
-  }
-
-  .contents_img {
-    width: 100%;
-    margin-left: 1vw;
-  }
-
-  .contents_img img {
-    display: inline-block;
-    width: 100px;
-    object-fit: cover;
-  }
-
-  #contents_img01 {
-    margin-left: 0;
   }
 }
