@@ -1,0 +1,86 @@
+#container {
+  margin: auto;
+}
+
+#myprofile {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 25vh;
+  margin-top: 10px;
+  padding-top: 33px;
+  padding-bottom: 10px;
+}
+
+.row {
+  padding-top: 15px;
+}
+
+div img {
+  border-radius:20%;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+#name {
+  text-align: center;
+  font-size: 40px;
+}
+
+#modify {
+  font-size: small;
+  text-align: center;
+  margin: 5px;
+}
+
+#modify a:link {
+  color: gray;
+}
+
+#modify a:visited {
+  color: gray;
+}
+
+.listall .list{
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.list:hover {
+  background-color: #86c9e8;
+}
+
+.list a{
+  text-decoration: none;
+}
+
+.list a:link {
+  color: #00B0FF;
+}
+
+.list a:visited {
+  color: #00B0FF;
+}
+
+.list a:hover {
+  color: white;
+}
+
+#logout {
+  border: none;
+  text-align: center;
+  margin: 20px;
+}
+
+#logout a:link {
+  color: gray;
+}
+
+#logout a:visited {
+  color: gray;
+}

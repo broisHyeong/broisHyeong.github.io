@@ -1,0 +1,68 @@
+#title {
+  font-size: 32px;
+  margin-left: 20px;
+}
+div.grad {
+  margin: auto;
+  padding: 10px;
+  color: white;
+  width:85vw;
+  height:30vh;
+  border-radius:20px;
+  background: rgb(216, 221, 219);
+  background: linear-gradient(to right bottom, rgb(70, 25, 218), rgb(232, 39, 17));
+}
+
+#content {
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+hr {
+  color: rgb(247, 246, 246);
+  width:100% ;
+}
+
+p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px; 
+}
+
+span {
+  font-weight: bold; 
+  text-align: right; 
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-item {
+  border: none;
+  background-color: transparent;
+}
+.flex-item img {
+  border-radius: 50%;
+  width: 50px;
+  height: 100;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+.btn .next {
+  margin-top: 10px;
+  background-color: red;
+  width: 90vw;
+  height: 10vh;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}

@@ -1,0 +1,27 @@
+body {
+  background: url(../img/background.jpg);
+  /*filter: brightness(50%);*/
+}
+
+#container {
+  background-color: black;
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+.id {
+  border: 1px solid white;
+}
+
+#loginbtn {
+  background-color: red;
+  color: white;
+}

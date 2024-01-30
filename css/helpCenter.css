@@ -1,0 +1,85 @@
+.helpCenter_Box{
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    padding: 0 1.25rem;
+    text-align: center;
+    width: 100vw;
+}
+
+.helpCenter_inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 610px;
+    margin: 0 auto;
+}
+.helpCenter_title {
+    margin-bottom: 2.25rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#helpCenter_search{
+    padding: 0 3.4375rem !important;
+    height: 3rem;
+    border: 2px solid ;
+    border-image: linear-gradient(to right, red, purple, rgb(92, 92, 231));
+    border-image-slice: 1;
+    border-radius: .25rem;
+    box-shadow: 0.2rem .0625rem 0.25rem 0rem black;
+    width: 70%;
+    font-size: 1rem;
+}
+
+#helpCenter_search::placeholder {
+    text-align: center; 
+    color: #999; 
+    font-style: italic; 
+}
+
+.category_box{
+    padding: 12px 12px;
+    border: 1px solid rgba(128,128,128,0.4);
+    border-radius: 8px;
+    background-color: white;
+    width: 420px;
+    margin: auto;
+}
+
+.article-list {
+    list-style: none; 
+    padding-left: 20px;
+}
+
+.article-list li {
+    position: relative;
+    padding-left: 30px; 
+    line-height: 1.5; 
+    padding-bottom: 7px;
+}
+
+.article-list li::before {
+    content: ""; 
+    background-image: url('../img/helpCenter.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 20px; 
+    height: 20px; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px; 
+}
+
+
+@media (max-width: 450px){
+    #helpCenter_search{
+        font-size: 0.785rem;
+    }
+    .category_box{
+        width: 100%;
+    }
+}

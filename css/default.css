@@ -1,0 +1,44 @@
+/* import font 구문 여기 넣어주세요! */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+:root {
+  --color-main-blue: #00B0FF;
+  --color-light-blue: #81D4FA;
+  --color-background-beige: #F8F4EC;
+  --color-background-black: #000000;
+}
+
+iframe {
+  background-color: var(--color-background-black);
+  display: block;
+}
+
+.empty_header {
+  height: 60px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+}
+
+.empty_menubar {
+  height: 50px;
+}
+
+.menubar {
+  position: fixed;
+  bottom: 0
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    padding: 0 10vw;
+  }
+}

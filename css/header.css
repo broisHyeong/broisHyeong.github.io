@@ -1,0 +1,33 @@
+@import url("./default.css");
+
+@media screen and (max-width: 426px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #menubar {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menubar_logo img {
+    height: 60px;
+    margin: 0 10px;
+  }
+
+  .menubar_icon {
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+  }
+
+  .menubar_icon i {
+    color: var(--color-main-blue);
+  }
+}

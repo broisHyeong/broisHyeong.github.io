@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Box</title>
+  <link rel="stylesheet" href="../css/search.css">
+  <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="../css/slideshow.css">
+  <script src="https://kit.fontawesome.com/e305523b80.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="search">
+    <img src="../img/search.png" width="6%" height="3%" alt="">
+    <input type="text">
+  </div>
+
+<!-- Top 5 -->
+<input type="radio" id="s-1" name="slider-control" checked="checked">
+<input type="radio" id="s-2" name="slider-control">
+<input type="radio" id="s-3" name="slider-control">
+<input type="radio" id="s-4" name="slider-control">
+<input type="radio" id="s-5" name="slider-control">
+<div class="js-slider">
+  <figure class="js-slider_item img-1">
+    <div class="js-slider_img">
+      <img class="img_w" src="../img/wish.jpg" alt="Wish">
+    </div>
+    <figcaption class="slide_caption">
+      <h3 class="slide_moviename">
+        <div class="c_topno"><i class="fas fa-1"></i></div>
+        <div class="c_label">Wish</div></h3>
+      <ul class="c_detail"><li>Wish is a 2023 American animated musical fantasy film produced by Walt Disney Animation Studios and distributed by Walt Disney Studios Motion Pictures.</li></ul>
+      </figcaption>
+  </figure>
+  <figure class="js-slider_item img-2">
+    <div class="js-slider_img">
+      <img class="img_w" src="../img/seoulspring.jpg" alt="Seoul Spring">
+    </div>
+    <figcaption class="slide_caption">
+      <h3 class="slide_moviename">
+        <div class="c_topno"><i class="fas fa-2"></i></div>
+        <div class="c_label">서울의 봄</div></h3>
+        <ul class="c_detail"><li>2023년 11월 22일 개봉한 김성수의 한국 영화. 1979년 12월에 발발한 12.12 군사반란을 주요 소재로 한다.</li></ul>
+      </figcaption>
+  </figure>
+  <figure class="js-slider_item img-3">
+    <div class="js-slider_img">
+      <img class="img_w" src="../img/insideout.jpg" alt="insideout">
+    </div>
+    <figcaption class="slide_caption">
+      <h3 class="slide_moviename">
+        <div class="c_topno"><i class="fas fa-3"></i></div>
+        <div class="c_label">Inside Out</div></h3>
+        <ul class="c_detail"><li>After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school.</li></ul>
+      </figcaption>
+  </figure>
+  <figure class="js-slider_item img-4">
+    <div class="js-slider_img">
+      <img class="img_w" src="../img/alien.jpg" alt="Alien">
+    </div>
+    <figcaption class="slide_caption">
+      <h3 class="slide_moviename">
+        <div class="c_topno"><i class="fas fa-4"></i></div>
+        <div class="c_label">외계인</div></h3>
+        <ul class="c_detail"><li>고려 말 소문 속의 신검을 차지하려는 도사들과 2022년 인간의 몸 속에 수감된 외계인 죄수를 쫓는 이들 사이에 시간의 문이 열리며 펼쳐지는 이야기를 그린 영화.</li></ul>
+      </figcaption>
+  </figure>
+  <figure class="js-slider_item img-5">
+    <div class="js-slider_img">
+      <img class="img_w" src="../img/ilbuco.jpg" alt="ilbuco">
+    </div>
+    <figcaption class="slide_caption">
+      <h3 class="slide_moviename">
+        <div class="c_topno"><i class="fas fa-5"></i></div>
+        <div class="c_label">Il buco</div></h3>
+        <ul class="c_detail"><li>The extraordinary adventure of the young members of the Piedmont Speleological Group who, having already explored all the caves of Northern Italy, changed course in August 1961 and went South to explore other caves unknown to man.</li></ul>
+      </figcaption>
+  </figure>
+  
+  <div class="js-slider_nav">
+    <label class="js-slider_nav_item s-nav-1 prev" for="s-5"></label>
+    <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+    <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+    <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+    <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+    <label class="js-slider_nav_item s-nav-3 next" for="s-4"></label>
+    <label class="js-slider_nav_item s-nav-4 prev" for="s-3"></label>
+    <label class="js-slider_nav_item s-nav-4 next" for="s-5"></label>
+    <label class="js-slider_nav_item s-nav-5 prev" for="s-4"></label>
+    <label class="js-slider_nav_item s-nav-5 next" for="s-1"></label>
+  </div>
+  </div>
+  <br>
+  <!-- 장르 -->
+  <div id="genre_title"><h6>추천 장르</h6></div>
+  <div  id="genre_container">
+    <div class="genre_box"><p>로맨스</p></div>
+    <div class="genre_box"><p>애니메이션</p></div>
+    <div class="genre_box"><p>액션</p></div>
+    <div class="genre_box"><p>SF.판타지</p></div>
+    <div class="genre_box"><p>코미디</p></div>
+    <div class="genre_box"><p>드라마</p></div>
+    <div class="genre_box"><p>실화바탕</p></div>
+    <div class="genre_box"><p>범죄</p></div>
+    <div class="genre_box"><p>스릴러</p></div>
+  </div>
+
+  <iframe src="./menubar.html" frameborder="0" width="100%" height="50px"></iframe>
+</body>
+</html>
