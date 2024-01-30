@@ -23,7 +23,7 @@
 }
 
 iframe {
-  background-color: var(--color-background-black);
+  /* background-color: var(--color-background-black); */
   display: block;
 }
 

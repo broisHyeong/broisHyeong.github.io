@@ -1,10 +1,10 @@
-.container h1 {
+.recommend h1 {
   margin: 3vh 0;
   font-size: 16px;
 }
 
 .recommend {
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 .recommend_contents {
