@@ -15,3 +15,15 @@ function confirmDelete(){
         //아무 동작 없음
     }
 }
+
+document.getElementById('option-down-arrow').addEventListener('click', function() {
+    let deviceList = document.querySelector('.option-device-list');
+    deviceList.classList.toggle('active');
+});
+
+document.querySelectorAll('.option-device-list li').forEach(function(device) {
+    device.addEventListener('click', function() {
+        // 선택된 기기에 대한 처리  
+        alert('선택된 기기: ' + device.textContent);
+    });
+});

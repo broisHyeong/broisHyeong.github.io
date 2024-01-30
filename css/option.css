@@ -52,13 +52,23 @@
 #resolution-selector{
     background-color: transparent;
     border: none;
+    border-radius: 10%;
     color: black;
     cursor: pointer;
     display: inline-block;
     float: right;
 }
 
-#option-logo{
+#option-trashcan{
+    float: right;
+    padding-top: 12px;
+    padding-right: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+#option-down-arrow{
     float: right;
     padding-top: 12px;
     padding-right: 20px;
@@ -79,11 +89,29 @@
     margin: 10px;
 }
 
+.option-device-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.option-device-list li{
+    cursor: pointer;
+}
+
+.option-device-list.active{
+    display: block;
+}
+
 @media (max-width: 450px){
     .device-option-container{
         width: 380px;
     }
     #option-title{
         left: 5%;
+    }
+    #resolution-selector{
+        background-color: rgb(213, 208, 208);
     }
 }

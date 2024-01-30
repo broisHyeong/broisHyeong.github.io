@@ -1,5 +1,76 @@
 @import url("./default.css");
 
+#menubar {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menubar_logo img {
+  height: 60px;
+  margin: 0 10px;
+}
+
+/* 애니매이션 부분 */
+.main_search {
+  background: #2f3640;
+  height: 35px;
+  border-radius: 35px;
+  margin-right: 10px;
+}
+
+.main_search a {
+  text-decoration: none;
+}
+
+.main_search i {
+  color: var(--color-main-blue);
+}
+
+.main_search button {
+  border: 0;
+}
+
+.main_search:hover > .main_searchinput {
+  width: 130px;
+  padding: 0 20px;
+}
+
+.main_search:hover > .main_searchbtn {
+  background: white;
+}
+
+.main_searchbtn {
+  color: white;
+  float: right;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+/* 애니매이션 부분 */
+
+.main_searchinput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 35px;
+  width: 0px;
+}
+
 @media screen and (max-width: 426px) {
   * {
     margin: 0;
@@ -14,20 +85,5 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .menubar_logo img {
-    height: 60px;
-    margin: 0 10px;
-  }
-
-  .menubar_icon {
-    display: flex;
-    margin: 0 10px;
-    align-items: center;
-  }
-
-  .menubar_icon i {
-    color: var(--color-main-blue);
   }
 }
