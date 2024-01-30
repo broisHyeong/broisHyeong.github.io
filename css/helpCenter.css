@@ -17,7 +17,7 @@
 }
 .helpCenter_title {
     margin-bottom: 2.25rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
 }
 
@@ -29,7 +29,7 @@
     border-image-slice: 1;
     border-radius: .25rem;
     box-shadow: 0.2rem .0625rem 0.25rem 0rem black;
-    width: 70%;
+    width: 100%;
     font-size: 1rem;
 }
 
@@ -46,6 +46,7 @@
     background-color: white;
     width: 75%;
     margin: auto;
+    font-size: 1.5rem;
 }
 
 .article-list {
@@ -83,8 +84,13 @@
 @media (max-width: 426px){
     #helpCenter_search{
         font-size: 0.785rem;
+        width: 90%;
+    }
+    .helpCenter_title{
+        font-size: 2rem;
     }
     .category_box{
         width: 100%;
+        font-size: 1rem;
     }
 }
