@@ -67,7 +67,7 @@ button {
   margin: auto;
   padding: 20px;
   padding-bottom: 5px;
-  width:85vw;
+  width:80vw;
   height:30vh;
   border-radius:10px;
   text-align: left;
@@ -194,22 +194,28 @@ font-size: 20px;
 
 #content {
   padding: 10px;
+  padding-top: 13px;
   padding-left: 20px;
   font-size: 13px;
 }
 
 #content p {
   color: dodgerblue;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 35px;
 }
 
 .q-list {
   background-color: rgb(67, 64, 64);
   color: white;
   border: none;
-  width: 90vw;
+  width: 80vw;
   height: 15vh;
   font-size: large;
-  margin-left: 21px;
   text-align:left;
   padding-left: 20px;
 }
