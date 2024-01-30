@@ -21,7 +21,8 @@
   object-fit: cover;
 }
 
-#contents_img01 {
+.recommend_contents:first-child {
+  border: 10px solid orange;
   margin-left: 0;
 }
 
