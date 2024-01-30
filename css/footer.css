@@ -34,12 +34,20 @@
 
 
 .footer-text{
-    position: relative;
-    display: flex;
+    display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 0.72rem;
-    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footer-list-item{
+    display: flex;
+    align-items: center;
+}
+
+.language-selector{
+    display: inline-block;
 }
 
 #language-selector{
@@ -47,10 +55,14 @@
     border: none;
     color: silver;
     cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
 }
 
 #footer-globe{
     color: silver;
+}
+
+@media (max-width: 426px){
+    .footer-text{
+        font-size: 0.785rem;
+    }
 }
