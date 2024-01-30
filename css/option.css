@@ -1,3 +1,5 @@
+
+
 .toggleSwitch{
     width: 60px;
     margin: auto;
@@ -40,7 +42,7 @@
     border: 1px solid rgba(128,128,128,0.4);
     border-radius: 8px;
     background-color: white;
-    width: 700px;
+    width: 100%;
     margin: auto;
 }
 
@@ -78,15 +80,18 @@
 }
 
 .container{
+    width: 700px;
     padding: 0 !important;
     margin-bottom: 20px;
+    display: flex;
 }
 
 #option-title{
-    position: relative;
-    left: 26.5%;
+    width: 100%;
+    /* position: relative; */
     font-size: 2rem;
-    margin: 10px;
+    margin: 0;
+    padding: 10px;
 }
 
 .option-device-list{
@@ -105,8 +110,12 @@
 }
 
 @media (max-width: 450px){
+    .container {
+        width: 80vw;
+    }
+
     .device-option-container{
-        width: 380px;
+        width: 95%;
     }
     #option-title{
         left: 5%;
