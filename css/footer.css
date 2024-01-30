@@ -64,5 +64,6 @@
 @media (max-width: 426px){
     .footer-text{
         font-size: 0.785rem;
+        text-decoration: none;
     }
 }
