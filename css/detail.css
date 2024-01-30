@@ -1,4 +1,5 @@
 @import url(./default.css);
+@import url(./scroll.css);
 
 ul {
   list-style: none;
@@ -12,12 +13,23 @@ ul {
 .main_title {
   display: flex;
   justify-content: space-between;
+  
+}
+
+.main_title h1 {
+  vertical-align: middle;
 }
 
 .title_heart {
   text-align: center;
   display: grid;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.heart_btn {
+  width: 100%;
+  font-size: 30px;
+  color: var(--color-main-blue);
 }
 
 .title_heart p {
@@ -53,6 +65,7 @@ ul {
 .main_rate label:hover ~ label{
   text-shadow: 0 0 0 var(--color-main-blue);
 }
+/*  */
 
 .main_story{
   width: 100%;
@@ -72,6 +85,12 @@ ul {
   .container h1 {
     margin: 3vh 0;
     font-size: 16px;
+  }
+
+  .heart_btn {
+    width: 100%;
+    font-size: 25px;
+    color: var(--color-main-blue);
   }
 
   .main_rate label {
@@ -98,30 +117,5 @@ ul {
 
   .main_teaser {
     margin: 5vh 0;
-  }
-
-  .recommend {
-    margin-bottom: 10vh;
-  }
-
-  .recommend_contents {
-    display: flex;
-    justify-content: space-between;
-    overflow: scroll;
-  }
-
-  .contents_img {
-    width: 100%;
-    margin-left: 1vw;
-  }
-
-  .contents_img img {
-    display: inline-block;
-    width: 100px;
-    object-fit: cover;
-  }
-
-  #contents_img01 {
-    margin-left: 0;
   }
 }
