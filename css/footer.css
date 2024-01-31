@@ -38,7 +38,7 @@
     width: 100%;
     text-align: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 14px;
 }
 
 .footer-list-item{
@@ -65,16 +65,7 @@
 
 @media (max-width: 426px){
     .footer-text{
-        font-size: 0.785rem;
         text-decoration: none;
-    }
-    .footer a.link{
-        font-size: 0.785rem;
-    }
-    #language-selector{
-        font-size: 0.8rem;
-    }
-    #footer-globe{
-        font-size: 0.785rem;
-    }
+        font-size: 12px;
+    } 
 }

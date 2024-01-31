@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-size: 12px; */
+  font-size: var(--font-size-mobile);
 }
 
 .container {
@@ -20,6 +20,8 @@
   --color-background-black: #000000;
   --space-mobile-header: 60px;
   --space-mobile-menubar: 50px;
+  --font-size-mobile : 12px;
+  --font-size-desktop : 22px;
 }
 
 iframe {
@@ -50,5 +52,11 @@ iframe {
     margin: 0 10vw;
     padding-top: 60px;
     padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width : 426px){
+  *{
+    font-size: var(--font-size-desktop);
   }
 }
