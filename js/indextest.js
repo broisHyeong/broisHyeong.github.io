@@ -35,13 +35,38 @@
 // }
 
 
-const q_list = document.querySelector('.q_list');
-const answer1 = document.querySelector('#answer1');
+// const q_list = document.querySelector('.q_list');
+// const answer1 = document.querySelector('.answer1');
 
-q_list.onclick = () => {
-  if(answer1.style.display === 'none') {
-    answer1.style.display = 'block';
-  }else {
-    answer1.style.display = 'none';
-  }
+// q_list.onclick = () => {
+//   answer1.classList.toggle("block");
+// }
+
+
+// const q_list = document.querySelector('.q_list');
+
+// document.getElementsByClassName('q_list')[0].addEventListener('click', function() {
+//   let answer = document.querySelector('.answer1');
+//   answer.classList.toggle('active');
+// });
+
+const outer = document.querySelector('.outer');
+const innerList = document.querySelector('.inner-list');
+const inners = document.querySelectorAll('.inner');
+let currentIndex = 0;
+
+inners.forEach((inner) => {
+  inner.style.width = `${outer.clientWidth}px`;
+})
+
+innerList.style.width = `${outer.clientWidth * inners.length}px`;
+
+const getInterval = () => {
+  return setInterval(() => {
+    currentIndex++;
+    currentIndex = currentIndex >= inners.length ? 0 : currentIndex;
+    innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
+  }, 2500);
 }
+
+let interval = getInterval();

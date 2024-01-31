@@ -1,5 +1,6 @@
 @import url(./default.css);
 @import url(./footer.css);
+@import url(./flowimg.css);
 
 /* 공통 적용 속성 */
 * {
@@ -86,12 +87,13 @@ img {
 }
 
 .sub_genreBox {
-  margin-top: 5vh;
+  margin: 5vh -10vw;
 }
 
 .genreBox_text {
   font-size: 16px;
-  margin: 2vh 0;
+  margin: 2vh;
+  padding-left: 2vw;
 }
 
 .footer {
