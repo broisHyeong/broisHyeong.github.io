@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/helpCenter.css">
-    <link rel="stylesheet" href="../css/default.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <script src="https://kit.fontawesome.com/e305523b80.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <iframe src="../main/backend/header.html" frameborder="0" width="100%" height="60px"></iframe>
+    <div>
+        <iframe src="../main/backend/header.html" class="header" frameborder="0" width="100%" height="60px"></iframe>
+    </div>
+    <!-- helpCenter search bar -->
     <div class="helpCenter_Box">
         <div class="helpCenter_inner">
             <h1 class="helpCenter_title">어떻게 도와드릴까요?</h1>
@@ -21,6 +22,7 @@
         </div>
     </div>
 <br>
+<!-- helpCenter 설정 메뉴 -->
     <div class="container">
         <div class="category_box">
             <div class="category_header"><a><i class="fa-solid fa-lock" style="color : #00B0FF"></i>  계정 및 결제</li></a></div>
@@ -168,8 +170,7 @@
         </div>
         <br>
     </div>
-</body>
-<footer class="footer" >
+  <footer class="footer" >
     <div class="footer-container">
         <picture class="footer-logo">
             <img src="../img/Cloud_Download.png" alt="infinite_space_logo" width="80px">
@@ -226,6 +227,10 @@
         © 2024 infiniteSPACE and its related entities. All Rights Reserved.
         </p>
     </div>
-    <iframe src="../main/backend/menubar.html" frameborder="0" width="100%" height="50px"></iframe>
   </footer>
+  <div class="empty_menubar">
+    <iframe src="../main/backend/menubar.html" class="menubar" frameborder="0" width="100%" height="50px"></iframe>
+  </div>
+</body>
+
 </html>
