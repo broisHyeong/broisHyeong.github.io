@@ -1,3 +1,6 @@
+@import url(./default.css);
+@import url(./footer.css);
+
 #like-container{
     text-align: center;
 }
@@ -6,10 +9,26 @@
     padding: relative;
 }
 
-.like-header button{
+#like-logout{
     position: absolute;
-    right: 10%;
+    right: 15%;
     margin: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: white;
+    border-radius: 5%;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+#like-logout:hover{
+    background-color: white;
+    color: black;
+}
+
+.like-list{
+    padding-top: 100px;
 }
 
 .like-list-contents{
