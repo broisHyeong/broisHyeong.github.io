@@ -75,10 +75,10 @@ p {
   font-size: 15px;
 }
 
+/* star 아이콘 설정 */
 .main_rate {
   display: flex;
-  justify-content: left;
-  direction: rtl;
+  vertical-align: middle;
   border: 0;
 }
 
@@ -86,8 +86,42 @@ p {
   display: none;
 }
 
+.main_rate label {
+  width: 13.5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main_rate label {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.star_icon {
+  width: 13.5px;
+  height: 24px;
+  display: block;
+  position: relative;
+  left: 0;
+  background-image: url(../img/star-blank.svg);
+  background-repeat: no-repeat;
+}
+
+.main_rate .rate_iconbox:nth-child(odd) .star_icon {
+  background-position: left;
+}
+
+.main_rate .rate_iconbox:nth-child(even) .star_icon {
+  background-position: right;
+}
+
+#rateValue {
+  margin: 0 1vw;
+  font-size: 20px;
+}
+
 /* 별점 CSS로 구현 -> JS로 수정 예정 */
-.main_rate input[type=radio]:checked ~ label{
+/* .main_rate input[type=radio]:checked ~ label{
   text-shadow: 0 0 0 var(--color-main-blue);
 }
 
@@ -103,7 +137,7 @@ p {
 
 .main_rate label:hover ~ label{
   text-shadow: 0 0 0 var(--color-main-blue);
-}
+} */
 /*  */
 
 .info_ul {
@@ -179,9 +213,20 @@ p {
     font-size: 10px;
   }
 
-  .main_rate label {
-    font-size: 16px;
+  .star_icon {
+    width: 6px;
+    height: 13.5px;
+    background-image: url(../img/star-blank-small.svg);
   }
+
+  #rateValue {
+    margin: 0 1vw;
+    font-size: 12px;
+  }
+
+  /* .main_rate i {
+    font-size: 16px;
+  } */
 
   .info_ul p {
     font-size: 10px;
