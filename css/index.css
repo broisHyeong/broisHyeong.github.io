@@ -250,12 +250,12 @@ ul {
   padding-left: 20px;
 }
 
-.answer1 {
+.answer {
   background-color: rgb(39, 37, 37);
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   text-align:left;
   margin: auto;
   width: 70vw;
@@ -266,11 +266,15 @@ ul {
   display: none;
 }
 
-#answer1 a:link{
+.answer.active {
+  display: block;
+}
+
+.answer a:link{
   color: white;
 }
 
-#answer1 a:visited{
+.answer a:visited{
   color: white;
 }
 
