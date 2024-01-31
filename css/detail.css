@@ -61,13 +61,18 @@ p {
   grid-template-rows: 3fr 1fr;
 }
 
-.heart_btn {
+.heart_btn1, .heart_btn2{
   width: 100%;
   font-size: 30px;
   color: var(--color-main-blue);
+  display: none;
 }
 
-.heart_btn i {
+.heart_btn1 i {
+  vertical-align: bottom;
+}
+
+.heart_btn2 i {
   vertical-align: bottom;
 }
 
@@ -197,11 +202,17 @@ p {
     height: 30vh;
   }
 
-  .heart_btn {
+  .heart_btn1 {
     width: 100%;
     font-size: 20px;
     color: var(--color-main-blue);
-  }  
+  }
+  
+  .heart_btn2 {
+    width: 100%;
+    font-size: 20px;
+    color: var(--color-main-blue);
+  }
 
   .main_title {
     margin-top: 2vh;
