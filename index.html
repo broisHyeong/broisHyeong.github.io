@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="css/default.css"> -->
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Infinity SPACE</title>
 </head>
 <body>
@@ -69,18 +70,34 @@
         <div id="content">기묘한 이야기
           <p>저장 중 ...</p>
         </div>
+        <div class="loading">
+          <i class="fa-solid fa-spinner fa-spin-pulse fa-2x"></i>
+        </div>
       </div>
     </div>
   </div>
   <div class="container-bottom1">
     <div class="first">자주 묻는 질문</div>
     <ul>
-      <li><button class="q-list">인피니트에서 어떤 콘텐츠를 시청할 수<br>있나요?</button></li>
-      <li><button class="q-list">인피니트란 무엇인가요?</button></li>
-      <li><button class="q-list">인피니트 요금은 얼마인가요?</button></li>
-      <li><button class="q-list">어디에서 시청할 수 있나요?</button></li>
-      <li><button class="q-list">멤버십을 해지하려면 어떻게 하나요?</button></li>
-      <li><button class="q-list">아이들이 인피니트를 봐도 좋을까요?</button></li>
+      <li><button class="q_list">인피니트에서 어떤 콘텐츠를 시청할 수<br>있나요?</button></li>
+      <div id="answer1">인피니트는 장편 영화, 다큐멘터리,<br>시리즈, 애니메이션, 각종 상을 수상한<br>
+      인피니트 오리지널 등 수많은 콘텐츠를<br>확보하고 있습니다. 마음에 드는 콘텐츠를<br>
+      원하는 시간에 원하는 만큼 시청하실 수<br>있습니다.<br><br>
+      <a href="#">인피니트 콘텐츠를 한번 살펴보세요.</a></div>
+      <!-- <li><button class="q_list" onclick='btnClick()'>인피니트란 무엇인가요?</button></li>
+      <div id="answer2">인피니트는 각종 수상 경력에 빛나는<br>
+        시리즈, 영화, 애니메이션, 다큐멘터리 등<br>
+        다양한 콘텐츠를 인터넷 연결이 가능한<br>
+        수천 종의 디바이스에서 시청할 수 있는<br>
+        스트리밍 서비스입니다.<br><br>
+        저렴한 월 요금으로 원하는 시간에 원하는<br>
+        만큼 즐길 수 있습니다. 무궁무진한<br>
+        콘텐츠가 준비되어 있으며 매주 새로운<br>
+        시리즈와 영화가 제공됩니다.</div> -->
+      <li><button class="q_list" onclick='btnClick()'>인피니트 요금은 얼마인가요?</button></li>
+      <li><button class="q_list" onclick='btnClick()'>어디에서 시청할 수 있나요?</button></li>
+      <li><button class="q_list" onclick='btnClick()'>멤버십을 해지하려면 어떻게 하나요?</button></li>
+      <li><button class="q_list" onclick='btnClick()'>아이들이 인피니트를 봐도 좋을까요?</button></li>
     </ul>
   </div>
   <div class="container-bottom2">
@@ -89,8 +106,24 @@
     <div>
       <input type="email"  id="form" placeholder="이메일 주소">
     </div>
-    <button>시작하기 >
+    <button><a href="main/signup.html">시작하기 ></a>
   </div>
   </div>
+  <script>
+    var q_list = document.getElementsByClassName("q_list");
+    var i;
+
+    for (i = 0; i < answer1.length; i++) {
+      q_list[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var answer1 = this.nextElementSibling;
+        if (answer1.style.display === "block") {
+          answer1.style.display = "none";
+        } else {
+          answer1.style.display = "block";
+      }
+      });
+    }
+  </script>
 </body>
 </html>
