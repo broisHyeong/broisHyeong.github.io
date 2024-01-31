@@ -1,28 +1,33 @@
 #flowimg-container {
   overflow: hidden;
   position: relative;
-  width: 1440px;
-  height: 300px;
+  width: 200vw;
+  height: 300vh;
+  box-sizing: border-box;
   margin-bottom: 5vh;
 }
 
 .flowimg-box {
-  width: 73%;
+  width: 83%;
   height: 100%;
   display: flex;
   animation: bannermove 30s linear infinite;
   justify-content: space-between;
   flex-wrap: nowrap;
   overflow-y: hidden;
+  
 }
 
 .flowimg-box img {
   width: 200px;
   height: 300px;
   object-fit: cover;
+  border-radius: 0% 20%;
+ 
+  padding-left: 8%;
 }
 .flowimg-box > div {
-  margin: 1px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 @keyframes bannermove {
@@ -34,7 +39,7 @@
   }
 }
 @media screen and (max-width: 426px) {  
-
+  
   .flowimg img {
     width: 100px;
     height: 150px;
