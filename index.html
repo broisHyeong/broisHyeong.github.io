@@ -84,6 +84,8 @@
       인피니트 오리지널 등 수많은 콘텐츠를<br>확보하고 있습니다. 마음에 드는 콘텐츠를<br>
       원하는 시간에 원하는 만큼 시청하실 수<br>있습니다.<br><br>
       <a href="#">인피니트 콘텐츠를 한번 살펴보세요.</a></div>
+
+      
       <!-- <li><button class="q_list" onclick='btnClick()'>인피니트란 무엇인가요?</button></li>
       <div id="answer2">인피니트는 각종 수상 경력에 빛나는<br>
         시리즈, 영화, 애니메이션, 다큐멘터리 등<br>
@@ -109,21 +111,6 @@
     <button><a href="main/signup.html">시작하기 ></a>
   </div>
   </div>
-  <script>
-    var q_list = document.getElementsByClassName("q_list");
-    var i;
-
-    for (i = 0; i < answer1.length; i++) {
-      q_list[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var answer1 = this.nextElementSibling;
-        if (answer1.style.display === "block") {
-          answer1.style.display = "none";
-        } else {
-          answer1.style.display = "block";
-      }
-      });
-    }
-  </script>
+  <script src="js/indextest.js"></script>
 </body>
 </html>

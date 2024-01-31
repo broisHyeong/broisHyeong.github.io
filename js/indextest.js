@@ -19,18 +19,29 @@
 //   });
 // });
 
-var q_list = document.getElementsByClassName("q_list");
-var i;
+// const q_list = document.querySelector(".q_list");
+// const answer = document.querySelector('#answer1');
 
-for (i = 0; i < answer1.length; i++) {
-  q_list[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var answer1 = this.nextElementSibling;
-    if (answer1.style.display === "block") {
-      answer1.style.display = "none";
-    } else {
-      answer1.style.display = "block";
-    }
-  });
+// for (let i = 0; i <q_list.length; i++) {
+//   q_list[i].addEventListener("click", function() {
+//     q_list.classList.toggle("q_list");
+//     var answer1 = this.nextElementSibling;
+//     if (answer1.style.display === "block") {
+//       answer1.style.display = "none";
+//     } else {
+//       answer1.style.display = "block";
+//     }
+//   });
+// }
+
+
+const q_list = document.querySelector('.q_list');
+const answer1 = document.querySelector('#answer1');
+
+q_list.onclick = () => {
+  if(answer1.style.display === 'none') {
+    answer1.style.display = 'block';
+  }else {
+    answer1.style.display = 'none';
+  }
 }
-
