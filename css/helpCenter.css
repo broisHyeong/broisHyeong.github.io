@@ -64,8 +64,8 @@
     position: relative;
     padding-left: 30px; 
     line-height: 1.5; 
+    padding-top: 10px;
     padding-bottom: 7px;
-    font-size: 2rem ;
 }
 
 a:-webkit-any-link {
