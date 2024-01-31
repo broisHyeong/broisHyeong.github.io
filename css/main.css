@@ -23,19 +23,14 @@ img {
 }
 
 /* 위에서부터 아래 순서로 작성 */
-.container {
-  padding: 0;
-  position: relative;
-}
-
+/* 상단 이미지 */
 .main {
-  display: block;
-  width: 100vw;
-  position: absolute;    
-  left: -15vw;
+  width: 100%;
+  position: relative;    
 }
 
 .main_carousel {
+  display: block;
   height: 500px;
   z-index: 0;
   background: gray;
@@ -82,18 +77,19 @@ img {
   font-size: 20px;
 }
 
-.sub {
-  padding-top: 500px;
+/* container */
+.container {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0 5vw;
 }
 
 .sub_genreBox {
-  margin: 5vh -10vw;
+  margin: 5vh 0;
 }
 
 .genreBox_text {
-  font-size: 16px;
   margin: 2vh;
-  padding-left: 2vw;
 }
 
 .footer {
@@ -101,9 +97,6 @@ img {
 }
 
 @media screen and (max-width: 426px) {
-  .main {   
-    left: -10vw;
-  }
 
   .main_carousel {
     height: 300px;
@@ -129,10 +122,6 @@ img {
 
   .carousel_btn i {
     font-size: 14px;
-  }
-
-  .sub {
-    padding-top: 300px;
   }
 
   .sub_genreBox {
