@@ -52,3 +52,21 @@ document.addEventListener('DOMContentLoaded', function () {
     rateVlalue.textContent = checkedCount.toFixed(1);
   }
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+  var heart_btn1 = document.querySelector(".heart_btn1");
+  var heart_btn2 = document.querySelector(".heart_btn2");
+
+  // 초기에 첫 번째 내용 보이기
+  heart_btn1.style.display = "block";
+
+  document.addEventListener("click", function() {
+    if (heart_btn1.style.display === "block") {
+      heart_btn1.style.display = "none";
+      heart_btn2.style.display = "block";
+    } else {
+      heart_btn1.style.display = "block";
+      heart_btn2.style.display = "none";
+    }
+  });
+});
