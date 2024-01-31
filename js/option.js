@@ -28,13 +28,15 @@ document.querySelectorAll('.option-device-list li').forEach(function(device) {
     });
 });
 
+
 const btnBlack = document.getElementById("black");
-const btnBeige = document.getElementById("beige");
+const btnWhite = document.getElementById("white");
 
 btnBlack.addEventListener("click", (e) => {
     document.body.style.backgroundColor = "black";
 });
 
-btnBeige.addEventListener("click", (e) => {
-    document.body.style.backgroundColor = "beige";
+btnWhite.addEventListener("click", (e) => {
+    document.body.style.backgroundColor = "white";
 });
+

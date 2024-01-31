@@ -1,18 +1,13 @@
 .option-bg {
     opacity: 0.6;
 }
-.button:hover,
-.button.active {
-    background: black;
-    color: white;
-}
-.button:visited {
-    background: white;
-    color: black;
-}
 
-.button {
-    border: 0;
+
+.button img {
+    width: 20px;
+}
+.button{
+    all: unset;
 }
 .toggleSwitch{
     width: 60px;
