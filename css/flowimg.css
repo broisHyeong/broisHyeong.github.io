@@ -2,7 +2,7 @@
   overflow: hidden;
   position: relative;
   width: 200vw;
-  height: 300vh;
+  height: 33vh;
   box-sizing: border-box;
   margin-bottom: 5vh;
 }
@@ -23,7 +23,6 @@
   height: 300px;
   object-fit: cover;
   border-radius: 0% 20%;
- 
   padding-left: 8%;
 }
 .flowimg-box > div {
