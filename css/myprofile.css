@@ -75,14 +75,8 @@ div img {
 #logout {
   border: none;
   text-align: center;
+  text-decoration: underline;
   margin: 20px;
-}
-
-#logout a:link {
-  color: gray;
-}
-
-#logout a:visited {
   color: gray;
 }
 
