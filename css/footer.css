@@ -29,17 +29,25 @@
     padding: 8px 12px;
     text-decoration: none;
     white-space: nowrap;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 
 
 .footer-text{
-    position: relative;
-    display: flex;
+    display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 0.72rem;
-    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-list-item{
+    display: flex;
+    align-items: center;
+}
+
+.language-selector{
+    display: inline-block;
 }
 
 #language-selector{
@@ -47,10 +55,17 @@
     border: none;
     color: silver;
     cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
+    font-size: 1.1rem;
 }
 
 #footer-globe{
     color: silver;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 426px){
+    .footer-text{
+        text-decoration: none;
+        font-size: 12px;
+    } 
 }

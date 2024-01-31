@@ -17,7 +17,7 @@
 }
 .helpCenter_title {
     margin-bottom: 2.25rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
 }
 
@@ -29,7 +29,7 @@
     border-image-slice: 1;
     border-radius: .25rem;
     box-shadow: 0.2rem .0625rem 0.25rem 0rem black;
-    width: 70%;
+    width: 100%;
     font-size: 1rem;
 }
 
@@ -44,8 +44,9 @@
     border: 1px solid rgba(128,128,128,0.4);
     border-radius: 8px;
     background-color: white;
-    width: 420px;
+    width: 75%;
     margin: auto;
+    /* font-size: 1.5rem; */
 }
 
 .article-list {
@@ -53,11 +54,16 @@
     padding-left: 20px;
 }
 
+.subcategories{
+    cursor: pointer;
+}
+
 .article-list li {
     position: relative;
     padding-left: 30px; 
     line-height: 1.5; 
     padding-bottom: 7px;
+    font-size: 2rem ;
 }
 
 .article-list li::before {
@@ -75,9 +81,12 @@
 }
 
 
-@media (max-width: 450px){
+@media (max-width: 426px){
     #helpCenter_search{
-        font-size: 0.785rem;
+        width: 90%;
+    }
+    .helpCenter_title{
+        font-size: 2rem;
     }
     .category_box{
         width: 100%;

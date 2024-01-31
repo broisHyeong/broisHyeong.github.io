@@ -1,5 +1,6 @@
-#container {
-  margin: auto;
+.container_content {
+  margin: 0 auto;
+  width: 500px;
 }
 
 #myprofile {
@@ -83,4 +84,11 @@ div img {
 
 #logout a:visited {
   color: gray;
+}
+
+@media screen and (max-width: 426px) {
+  .container_content {
+    width: 100%;
+  }
+  
 }

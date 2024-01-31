@@ -1,10 +1,5 @@
-.container h1 {
-  margin: 3vh 0;
-  font-size: 16px;
-}
-
 .recommend {
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 .recommend_contents {
@@ -22,16 +17,20 @@
 .contents_img img {
   display: inline-block;
   width: 200px;
+  height: 300px;
   object-fit: cover;
 }
 
-#contents_img01 {
+.recommend_contents:first-child {
+  border: 10px solid orange;
   margin-left: 0;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 426px) {  
+
   .contents_img img {
     width: 100px;
+    height: 150px;
   }
 
 }

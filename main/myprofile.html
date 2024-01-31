@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/myprofile.css">
   <link rel="stylesheet" href="../css/default.css">
+  <link rel="stylesheet" href="../css/myprofile.css">
   <title>Document</title>
 </head>
 <body>
-  <iframe src="./header.html" frameborder="0" width="100%" height="60px"></iframe>
-  <div class="container">
-    <div id="myprofile">
+  <iframe src="./backend/header.html" class="header" frameborder="0" width="100%" height="60px"></iframe>
+  <div class="container" id="container">
+    <div id="myprofile" class="container_content">
       <div class="myimg">
         <img src="../img/profile.png" alt="">
       </div>
@@ -19,8 +19,7 @@
           <div id="modify"><a href="">회원 정보 수정</a></div>
       </div>
     </div>
-    </div>
-    <div class="listall">
+    <div class="listall container_content">
       <div class="list"><a href="">시청 내역</a></div>
       <div class="list"><a href="">찜</a></div>
       <div class="list"><a href="">문의페이지</a></div>
@@ -31,6 +30,6 @@
       <div id = "logout"><a href="../index.html">로그아웃</a></div>
     </div>
   </div>
-  <iframe src="./menubar.html" frameborder="0" width="100%" height="50px"></iframe>
+  <iframe src="./backend/menubar.html" class="menubar" frameborder="0" width="100%" height="50px"></iframe>
 </body>
 </html>
