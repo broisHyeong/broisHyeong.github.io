@@ -27,3 +27,16 @@ document.querySelectorAll('.option-device-list li').forEach(function(device) {
         alert('선택된 기기: ' + device.textContent);
     });
 });
+
+
+const btnBlack = document.getElementById("black");
+const btnWhite = document.getElementById("white");
+
+btnBlack.addEventListener("click", (e) => {
+    document.body.style.backgroundColor = "black";
+});
+
+btnWhite.addEventListener("click", (e) => {
+    document.body.style.backgroundColor = "white";
+});
+

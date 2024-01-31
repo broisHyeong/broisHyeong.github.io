@@ -1,0 +1,13 @@
+#modebutton{
+  position: fixed;
+  right: 2vw;
+  bottom: 2vw;
+}
+
+.button img {
+  width: 20px;
+}
+
+.button{
+  all: unset;
+}
