@@ -128,6 +128,7 @@ hr{
 @media (max-width: 426px){
     .device-option-container{
         width: 95%;
+        margin-bottom: 45px;
     }
     #option-title{
         font-size: medium;
