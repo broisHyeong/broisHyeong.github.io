@@ -41,14 +41,29 @@
     color: #999; 
     font-style: italic; 
 }
+.category_header{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+summary{
+    margin: 5px;
+}
 
+.container {
+    margin: 0 10vw;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 15%;
+}
 .category_box{
     padding: 12px 12px;
     border: 1px solid rgba(128,128,128,0.4);
     border-radius: 8px;
     background-color: white;
     width: 75%;
-    margin: auto;
+    margin-top: -15%;
+    margin-bottom: 15%;
+    
 }
 
 .article-list {
@@ -59,7 +74,6 @@
 .subcategories{
     cursor: pointer;
 }
-
 .article-list li {
     position: relative;
     padding-left: 30px; 
@@ -98,5 +112,11 @@ a:-webkit-any-link {
     }
     .category_box{
         width: 100%;
+    }
+    .container {
+        padding-left: 0%;
+    }
+    .footer-logo{
+        margin-top: -30%;
     }
 }
