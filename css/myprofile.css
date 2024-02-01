@@ -33,13 +33,14 @@
 } */
 
 .container {
-  height: 90vh;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 70px;
-  padding-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 30px;
   border: 1px solid #00B0FF;
   border-radius: 10px;
   margin-bottom: 0px;
@@ -51,7 +52,34 @@
   font-weight: bold;
 }
 
-.list-all-container-content .list{
+hr {
+  color: rgb(247, 246, 246);
+  width:100% ;
+}
+
+.list-all-container-content {
+  margin-top: 35px;
+  padding-bottom: 0px;
+}
+
+.list-content1, .list-content2, .list-content3 {
+  display: flex;
+  flex-direction: space-between;
+  margin-bottom: 30px;
+}
+
+.list {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 25vw;
+  height: 10vh;
+  margin: 10px;
+  padding: 15px;
+  padding-top: 28px;
+  text-align: center;
+}
+
+/* .list{
   border: 1px solid gray;
   border-radius: 10px;
   margin: 10px;
@@ -60,7 +88,9 @@
   text-decoration: none;
   width: 50vw;
   display: flex;
-}
+  justify-content: center;
+  align-items: center;
+} */
 
 .list:hover {
   background-color: #86c9e8;
@@ -114,7 +144,7 @@
 }
 
 #tmp1{
-  margin: 50px;
+  margin-bottom: 15px;
   background-color: transparent;
   justify-content: center;
   text-align: center;
@@ -126,25 +156,22 @@
   border-radius:20%;
   border: 1px solid gray;
   margin: 20px;
+  margin-top: 0px;
+  margin-right: 50px;
   position: relative;
   padding: 11px;
 }
 
-.tmp_profile{
-  padding-top: 15px;
-  h1{
-    font-size: 32px;
-  }
-}
 
-.list-all-container-content{
+
+/* .list-all-container-content{
   
   width: 500px;
   margin: 0 auto;
-}
+} */
 
 @media screen and (max-width: 426px) {
-  .list-all-container-content {
+  /* .list-all-container-content {
     width: 100%;
   }
 
@@ -191,6 +218,135 @@
     padding: 4px;
     cursor: pointer;
     border: none;
+  } */
+
+  .container {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding-top: 10px;
+    border: 1px solid #00B0FF;
+    border-radius: 10px;
+    margin-bottom: 0px;
+  }
+
+  #name {
+    color : #095578;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #tmp1{
+    /* display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    margin-right: 30px; */
+    margin-top: -60px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+  }
+
+  .tmp_img{
+    border-radius:20%;
+    border: 1px solid gray;
+    margin: 20px;
+    margin-top: 0px;
+    margin-right: 20px;
+    position: relative;
+    padding: 11px;
+  }
+
+  .tmp_profile{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  hr {
+    color: rgb(247, 246, 246);
+    width:100% ;
+  }
+
+  .list-all-container-content {
+    margin-top: 15px;
+  padding-bottom: 0px;
+  }
+
+  .list-content1, .list-content2, .list-content3 {
+    display: flex;
+    flex-direction: space-between;
+    margin-bottom: 30px;
   }
   
+  .list{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 35vw;
+    height: 10vh;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  .list:hover {
+    background-color: #86c9e8;
+  }
+  
+  .list a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .list a:link {
+    color: #00B0FF;
+  }
+  
+  .list a:visited {
+    color: #00B0FF;
+  }
+  
+  .list a:hover {
+    color: white;
+  }
+  
+  #profile-logout {
+    margin: 5px;
+    margin-top: 13px;
+    background-color: #86c9e8;
+    color: white;
+    border-radius: 7px;
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  #profile-logout:hover{
+    background-color: white;
+    color: #00B0FF;
+  }
+  
+  #profile-edit{
+    margin: 5px;
+    background-color: #86c9e8;
+    color: white;
+    border-radius: 7px;
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  #profile-edit:hover{
+    background-color: white;
+    color: #00B0FF;
+  }
 }

@@ -48,6 +48,11 @@ button {
   font-size: 30px;
 }
 
+.container-top2 {
+  padding: auto;
+  margin: 10px;
+}
+
 /* #image {
   position: relative;
   z-index: 2;
@@ -65,18 +70,15 @@ button {
 #grad {
   position: relative;
   margin: auto;
-  margin-top: 50px;
   padding: 20px;
   padding-bottom: 5px;
-  width:80vw;
-  height:23vh;
+  width:70vw;
+  height:24vh;
   border-radius:10px;
   background: linear-gradient(0deg, rgb(41, 16, 123), rgb(94, 18, 10));
   z-index: 1;
-}
-
-.container-top2 {
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -87,7 +89,6 @@ button {
 
 .grad-content{
  font-size: 30px;
- margin-top: 50px;
 }
 
 #grad .large {
@@ -205,7 +206,7 @@ font-size: 30px;
 
 #child {
   width: 70vw;
-  height: 60vh;
+  height: 80vh;
 }
 
 .container-middle4 .first {
@@ -222,6 +223,7 @@ font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 #save {
@@ -233,7 +235,7 @@ font-size: 30px;
   border: 2px solid gray;
   border-radius: 10px;
   width: 60vw;
-  height: 10vh;
+  height: 15vh;
   /* position: absolute; */
   display: flex;
   margin: auto;
@@ -242,6 +244,7 @@ font-size: 30px;
 
 #downloadimg {
   padding-left: 15px;
+  pa
 }
 
 #content {
@@ -387,6 +390,11 @@ li {
     margin-top: 10px;
     font-size: large;
   }
+
+  .container-top2 {
+    padding: auto;
+    margin: 10px;
+  }
   
   /* #image {
     position: relative;
@@ -401,14 +409,6 @@ li {
     left: 55px;
     bottom: -35px
   } */
-
-  .container-top2 {
-    padding: auto;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
   #grad {
     position: relative;
@@ -422,7 +422,14 @@ li {
     background: linear-gradient(0deg, rgb(59, 20, 186), rgb(210, 34, 15));
     font-size: 20px;
     z-index: 1;
+    display: flex;
+    align-items: center;
   }
+
+  #image img {
+    margin-right: 20px;
+  }
+
   
   #grad .number{
   font-weight: bold;
@@ -574,7 +581,7 @@ li {
   
   #content {
     padding: 10px;
-    padding-top: 13px;
+    padding-top: 10px;
     padding-left: 20px;
     font-size: 13px;
   }
@@ -588,6 +595,7 @@ li {
     text-align: right;
     padding: 10px;
     margin: auto;
+    font-size: small;
   }
   
   ul {

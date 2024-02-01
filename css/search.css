@@ -5,15 +5,11 @@
   width: 500px;
   height: 40px;
   padding: 2px;
-
+  display: flex;
+  align-items: center;
   border-radius: 30px;
   border: 1.5px solid var(--color-main-blue);
 }
-
-/* js로 input focus동안 .search 변경되도록 하자 */
-/* .search input:focus {
-  box-shadow: 0 0 3px gray;
-} */
 
 .search i {
   display: inline-block;
@@ -24,6 +20,8 @@
 }
 
 .search input{
+  flex-grow: 1;
+  margin-right: 5px;
   border: none;
   outline: none;
   background: transparent;
