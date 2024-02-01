@@ -5,7 +5,8 @@
   width: 500px;
   height: 40px;
   padding: 2px;
-
+  display: flex;
+  align-items: center;
   border-radius: 30px;
   border: 1.5px solid var(--color-main-blue);
 }

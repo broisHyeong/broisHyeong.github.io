@@ -4,7 +4,7 @@
   <script src="https://kit.fontawesome.com/fccb424d55.js" crossorigin="anonymous"></script>
 </head>
 
-<section>
+<body>
   <div id="menubar">
     <div class="menubar_icon">
       <a href="../search.html" target="_parent">
@@ -32,4 +32,11 @@
       </a>
     </div>
   </div>
-</section>
+  <script>
+    window.addEventListener('message', function (event) {
+      if (event.data && event.data.backgroundColor) {
+        document.body.style.backgroundColor = event.data.backgroundColor;
+      }
+    });
+  </script>
+</body>
