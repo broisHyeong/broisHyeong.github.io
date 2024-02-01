@@ -1,7 +1,7 @@
 #modebutton{
   position: fixed;
   right: 2vw;
-  bottom: 2vw;
+  bottom: 60px;
 }
 
 .button img {

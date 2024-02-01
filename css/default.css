@@ -1,10 +1,19 @@
-/* import font 구문 여기 넣어주세요! */
+@import url(./modecolor.css);
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: var(--font-size-desktop);
+  font-family: 'BMJUA', sans-serif;
+  font-weight: 100;
 }
 
 .container {
@@ -36,6 +45,8 @@ iframe {
 .header {
   position: fixed;
   top: 0;
+  z-index: 10;
+  background-color: white;
 }
 
 /* .empty_menubar {
@@ -45,6 +56,8 @@ iframe {
 .menubar {
   position: fixed;
   bottom: 0;
+  z-index: 10;
+  background-color: white;
 }
 
 @media screen and (max-width: 426px) {
@@ -54,8 +67,9 @@ iframe {
 
   .container {
     margin: 0 10vw;
-    padding-top: 60px;
+    padding-top: 10px;
     padding-bottom: 50px;
+  
   }
 }
 

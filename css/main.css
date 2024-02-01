@@ -13,10 +13,12 @@ img {
 }
 
 .bold {
-  font-weight: 900;
+  font-weight: 500;
 }
 
-.header {
+#main_header {
+  position: fixed;
+  top: 0;
   height: 70px;
   background: linear-gradient(to bottom, var(--color-background-black), rgba(0,0,0,0));
   z-index: 10;
@@ -35,7 +37,7 @@ img {
   display: block;
   z-index: 0;
   /* background: gray; */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .carousel {

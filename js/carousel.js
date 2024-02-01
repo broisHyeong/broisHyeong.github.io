@@ -10,7 +10,6 @@ const $nextButton = document.querySelector(".next-button");
 const $imgList = document.querySelectorAll(".carousel_img");
 const carouselStyle = window.getComputedStyle($carousel);
 const carouselWidth = parseFloat(carouselStyle.getPropertyValue("width"));
-console.log(`${carouselWidth}`);
 
 $imgList.forEach(img => {
   img.style.width = `${carouselWidth}px`;
@@ -22,9 +21,10 @@ $cellList.forEach(cell => {
 
 //창 크기 변하면 같이 변경되도록
 window.addEventListener("resize", function () {
+  const $imgList = document.querySelectorAll(".carousel_img");
   const carouselStyle = window.getComputedStyle($carousel);
   const carouselWidth = parseFloat(carouselStyle.getPropertyValue("width"));
-  console.log(`${carouselWidth}`);
+  // console.log(`${carouselWidth}`);
   
   $imgList.forEach(img => {
     img.style.width = `${carouselWidth}px`;
@@ -40,11 +40,11 @@ const nextEvent = () => {
   if (cur !== CAROUSEL_LENGTH) {
     cur++;
     $carousel.style.transform = `translate(-${cur * carouselWidth}px, 0)`;
-    console.log(`${cur}, ${cur * carouselWidth * (-1)}px`);
+    // console.log(`${cur}, ${cur * carouselWidth * (-1)}px`);
   } else {
     cur = 0;
     $carousel.style.transform = `translate(0, 0)`;
-    console.log(`${cur}, 0px`);
+    // console.log(`${cur}, 0px`);
   }
   console.log("next");
 };
@@ -53,13 +53,12 @@ const nextEvent = () => {
 const prevEvent = () => {
   if (cur !== 0) {
     cur--;
-    // $carousel.style.transform = `translate(${cur * carouselWidth * (-1)}px, 0)`;
     $carousel.style.transform = `translate(-${cur * carouselWidth}px, 0)`;
-    console.log(`${cur * carouselWidth * (-1)}, 0px`);
+    // console.log(`${cur * carouselWidth * (-1)}, 0px`);
   } else {
     cur = CAROUSEL_LENGTH;
     $carousel.style.transform = `translate(-${CAROUSEL_LENGTH * carouselWidth}px, 0)`;
-    console.log(`${CAROUSEL_LENGTH * carouselWidth * (-1)}, 0px`);
+    // console.log(`${CAROUSEL_LENGTH * carouselWidth * (-1)}, 0px`);
   }
   console.log("prev");
 };

@@ -3,9 +3,9 @@ body {
 }
 
 .step {
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 #container {
@@ -42,26 +42,26 @@ body {
 }
 
 #form {
-  width: 700px;
-  height: 100px;
+  width: 600px;
+  height: 60px;
 }
 
 input::placeholder{
-  font-size: 30px;
+  font-size: 20px;
 }
 .button .next {
   background-color: red;
-  width: 700px;
-  height: 100px;
+  width: 300px;
+  height: 50px;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 40px;
   margin-bottom: 50px;
+  font-size: large;
 }
 
 a {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 426px) {
@@ -75,17 +75,22 @@ a {
     justify-content: center;
     align-items: center;
   }
-  
+  .step{
+    margin-top: -100px;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
   #content1 {
-    font-size: 32px;
+    font-size: 24px;
+    margin-bottom: -10px;
   }
   
   #content2 {
-    font-size: 20px;
+    font-size: 13px;
   }
   
   #content3 {
-    font-size: 18px;
+    font-size: 15px;
   }
   
   #content4 {
@@ -94,18 +99,25 @@ a {
   }
   
   #form {
-    width: 80vw;
-    height: 10vh;
+    width: 60vw;
+    height: 8vh;
+    margin: -50%;
+  }
+  input::placeholder{
+    font-size: 15px;
+  }
+  a {
+    font-size: 12px;
   }
   
-  .next {
+  .button .next {
     background-color: red;
-    width: 85vw;
-    height: 10vh;
+    width: 130px;
+    height: 35px;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 50px;
   }
 }
