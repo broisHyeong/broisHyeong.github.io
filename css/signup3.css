@@ -1,7 +1,27 @@
-#title {
-  font-size: 32px;
-  margin-left: 20px;
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.wrapper{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.step {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#title {
+  font-size: 52px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
 div.grad {
   margin: auto;
   padding: 10px;
@@ -11,10 +31,12 @@ div.grad {
   border-radius:20px;
   background: rgb(216, 221, 219);
   background: linear-gradient(to right bottom, rgb(70, 25, 218), rgb(232, 39, 17));
+  text-align: left;
+  font-size: 50px;
 }
 
 #content {
-  font-size: 17px;
+  font-size: 27px;
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -46,23 +68,24 @@ span {
   border: none;
   background-color: transparent;
 }
+
 .flex-item img {
   border-radius: 50%;
-  width: 50px;
+  width: 7vw;
   height: 100;
   border: 1px solid gray;
   margin-bottom: 10px;
 }
 
-.btn .next {
-  margin-top: 10px;
+.button .next {
+  margin-top: 20px;
   background-color: red;
   width: 90vw;
   height: 10vh;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 40px;
   margin-bottom: 50px;
   margin-left: 10px;
 }
