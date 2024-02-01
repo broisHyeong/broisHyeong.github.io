@@ -41,20 +41,26 @@
   margin-top: 70px;
   padding-top: 10px;
   padding-bottom: 30px;
-  border: 1px solid #00B0FF;
+  border: 1.5px solid #095578;
   border-radius: 10px;
   margin-bottom: 0px;
+  box-shadow: 0 0 10px 1px;
 }
 
 #name {
-  margin-top: 10px;
+  margin-top: 15px;
   color : #095578 ;
   font-weight: bold;
+  font-size: 30px;
 }
 
 hr {
-  color: rgb(247, 246, 246);
+  color: #095578;
   width:100% ;
+  border: 0;
+  height: 3px;
+
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(60, 108, 133, 0.75), rgba(0, 0, 0, 0));
 }
 
 .list-all-container-content {
@@ -69,7 +75,7 @@ hr {
 }
 
 .list {
-  border: 1px solid gray;
+  border: 2px solid #095578;
   border-radius: 10px;
   width: 25vw;
   height: 10vh;
@@ -77,6 +83,7 @@ hr {
   padding: 15px;
   padding-top: 28px;
   text-align: center;
+  box-shadow: 7px 7px 8px -3px #423e71;
 }
 
 /* .list{
@@ -98,6 +105,7 @@ hr {
 
 .list a{
   text-decoration: none;
+  font-size: 25px;
 }
 
 .list a:link {
@@ -120,7 +128,7 @@ hr {
   border-radius: 7px;
   padding: 3px;
   cursor: pointer;
-  border: none;
+  border: 2px solid #095578;
 }
 
 #profile-logout:hover{
@@ -129,13 +137,14 @@ hr {
 }
 
 #profile-edit{
-  margin: 5px;
+  margin: px;
   background-color: #86c9e8;
   color: white;
   border-radius: 7px;
-  padding: 3px;
+  padding: 5px;
+  padding-bottom: 3px;
   cursor: pointer;
-  border: none;
+  border: 2px solid #095578;
 }
 
 #profile-edit:hover{
@@ -154,7 +163,7 @@ hr {
 
 .tmp_img{
   border-radius:20%;
-  border: 1px solid gray;
+  border: 2px solid #095578;
   margin: 20px;
   margin-top: 0px;
   margin-right: 50px;
@@ -277,7 +286,7 @@ hr {
 
   .list-all-container-content {
     margin-top: 15px;
-  padding-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .list-content1, .list-content2, .list-content3 {
