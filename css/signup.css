@@ -45,6 +45,7 @@ body {
 #form {
   width: 600px;
   height: 60px;
+  font-size: 30px;
 }
 
 input::placeholder{
