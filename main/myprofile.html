@@ -20,24 +20,30 @@
       </div>
     </div> -->
 
-    <form id="tmp1">
-      <div class="tmp_img">
-        <img src="../img/profile.jpg" alt="profile_img" id="tmp_profile_img">
-      </div>
-      <div class="tmp_profile">
-        <h1>오서진</h1>
-        <div id = "profile-logout"><a onclick="confirmLogout()">로그아웃</a></div>
-        <div id = "profile-edit"><a onclick="confirmEdit()">프로필 편집</a></div>
-      </div>
-    </form>
-
-    <div class="list-all-container-content">
-      <div class="list"><a href="">시청 내역</a></div>
-      <div class="list"><a href="">리뷰 목록</a></div>
-      <div class="list"><a href="helpCenter.html">고객 센터</a></div>
-      <div class="list"><a href="backend/option.html">설정</a></div>
+    <div class="container">
+      <form id="tmp1">
+        <div class="tmp_img">
+          <img src="../img/profile.jpg" alt="profile_img" id="tmp_profile_img">
+        </div>
+          <div class="tmp_profile">
+            <div id="name">오서진</div>
+            <div id = "profile-logout"><a onclick="confirmLogout()">로그아웃</a></div>
+            <div id = "profile-edit"><a onclick="confirmEdit()">프로필 편집</a></div>
+          </div>
+        </form>
+    
+        <div class="list-all-container-content">
+          <div class="list"><a href="backend/option.html">설정</a></div>
+          <div class="list"><a href="">시청 내역</a></div>
+          <div class="list"><a href="">리뷰 모아보기</a></div>
+          <div class="list"><a href="helpCenter.html">고객 센터</a></div>
+          <div class="list"><a href="backend/option.html">서비스 이용 약관</a></div>
+          <div class="list"><a href="backend/option.html">공지사항</a></div>
+          <div class="list"><a href="backend/option.html">오픈소스라이센스</a></div>
+        </div>
     </div>
-  </div>
+    
+      
   <script src="../js/myprofile.js"></script>
   <iframe src="./backend/menubar.html" class="menubar" frameborder="0" width="100%" height="50px"></iframe>
 </body>
