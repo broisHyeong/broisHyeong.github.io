@@ -37,7 +37,7 @@
 }
 
 .main_search:hover > .main_searchinput {
-  width: 130px;
+  width: 300px;
   padding: 0 20px;
 }
 
@@ -86,5 +86,9 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .main_search:hover > .main_searchinput {
+    width: 130px;
   }
 }
