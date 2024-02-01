@@ -47,6 +47,7 @@ iframe {
   top: 0;
   z-index: 10;
   background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
 /* .empty_menubar {
@@ -58,6 +59,7 @@ iframe {
   bottom: 0;
   z-index: 10;
   background-color: white;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
 }
 
 @media screen and (max-width: 426px) {
