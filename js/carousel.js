@@ -22,6 +22,7 @@ $cellList.forEach(cell => {
 
 //창 크기 변하면 같이 변경되도록
 window.addEventListener("resize", function () {
+  const $imgList = document.querySelectorAll(".carousel_img");
   const carouselStyle = window.getComputedStyle($carousel);
   const carouselWidth = parseFloat(carouselStyle.getPropertyValue("width"));
   console.log(`${carouselWidth}`);
