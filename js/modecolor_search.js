@@ -8,8 +8,8 @@ const highlightText = document.querySelector('.c_label');
 btnBlack.addEventListener("click", (e) => {
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white";
-    document.body.s
     // headerBody.style.backgroundColor = "black";
+    input.style.color = "white";
     highlightText.style.color = "black";
     menubarBody.style.backgroundColor = "black";
     console.log("black");
