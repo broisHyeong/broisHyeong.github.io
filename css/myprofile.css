@@ -1,9 +1,4 @@
-.container_content {
-  margin: 0 auto;
-  width: 500px;
-}
-
-#myprofile {
+/* #myprofile {
   display: flex;
   justify-content: space-around;
   border: 1px solid gray;
@@ -12,38 +7,32 @@
   margin-top: 10px;
   padding-top: 33px;
   padding-bottom: 10px;
-}
+} */
 
-.row {
+/* .row {
   padding-top: 15px;
-}
+} */
 
-div img {
-  border-radius:20%;
-  border: 1px solid gray;
-  margin-bottom: 10px;
-}
-
-#name {
+/* #name {
   text-align: center;
   font-size: 40px;
-}
+} */
 
-#modify {
+/* #modify {
   font-size: small;
   text-align: center;
   margin: 5px;
-}
+} */
 
-#modify a:link {
+/* #modify a:link {
   color: gray;
-}
+} */
 
-#modify a:visited {
+/* #modify a:visited {
   color: gray;
-}
+} */
 
-.listall .list{
+.list-all-container-content .list{
   border: 1px solid gray;
   border-radius: 10px;
   margin: 10px;
@@ -72,17 +61,76 @@ div img {
   color: white;
 }
 
-#logout {
+#profile-logout {
+  margin: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  padding: 3px;
+  cursor: pointer;
   border: none;
+}
+
+#profile-logout:hover{
+  background-color: white;
+  color: black;
+}
+
+#profile-edit{
+  margin: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  padding: 3px;
+  cursor: pointer;
+  border: none;
+}
+
+#profile-edit:hover{
+  background-color: white;
+  color: black;
+}
+
+#tmp1{
+  margin: 50px;
+  background-color: transparent;
+  justify-content: center;
   text-align: center;
-  text-decoration: underline;
+  position: relative;
+  display: flex;
+}
+
+.tmp_img{
+  border-radius:20%;
+  border: 1px solid gray;
   margin: 20px;
-  color: gray;
+  position: relative;
+  padding: 11px;
+}
+
+.tmp_profile{
+  padding-top: 15px;
+  h1{
+    font-size: 32px;
+  }
+}
+
+.list-all-container-content{
+  padding-bottom: 50px;
+  width: 500px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 426px) {
-  .container_content {
+  .list-all-container-content {
     width: 100%;
+  }
+  .tmp_profile{
+    padding-top: 35px;
+
+    h1{
+      font-size: 22px;
+    }
   }
   
 }
