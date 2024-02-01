@@ -115,14 +115,22 @@ hr{
     padding: 0;
     margin: 0;
     display: none;
+    box-shadow: 3px 3px 3px 3px gray;
 }
 
 .option-device-list li{
     cursor: pointer;
+    padding-left: 5px;
 }
 
 .option-device-list.active{
     display: block;
+    margin-top: 5px;
+}
+
+li:hover{
+    background-color: rgb(177, 224, 247);
+    opacity: 0.6;
 }
 
 @media (max-width: 426px){
