@@ -1,5 +1,5 @@
-.option-bg {
-    opacity: 0.6;
+.box .device-option-container{
+    background-color: transparent;
 }
 
 .button img {
@@ -55,11 +55,12 @@ hr{
 
 .device-option-container{
     padding: 12px 12px;
-    border: 1px solid rgba(128,128,128,0.4);
+    border: 1px solid #00B0FF ;
     border-radius: 8px;
     background-color: white;
     width: z;
     margin: auto;
+    margin-top: 2%;
 }
 
 .option-box{
@@ -104,9 +105,9 @@ hr{
 
 #option-title{
     position: absolute;
-    left: 45%;
-    font-size: 18px;
-    margin: 15px 5px;
+    left: 10vw;
+    font-size: 20px;
+    margin-top: 22px;
 }
 
 .option-device-list{
