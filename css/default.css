@@ -1,10 +1,18 @@
-/* import font 구문 여기 넣어주세요! */
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: var(--font-size-desktop);
+  font-family: 'BMJUA', sans-serif;
+  font-weight: 100;
 }
 
 .container {
