@@ -18,18 +18,18 @@
     <div class="container">
         <div class="box">
             <div class="device-option-container">
-                <p style="font-size: 1rem; font-weight: 900;">기기 설정</p>
+                <div class="option-header">기기 설정</div>
                 <span style="font-size: 0.8rem;">현재 기기에서 사용하는 모든 프로필에 동일하게 설정됩니다.</span>
                 <br>
                 <!-- Mode -->
                 <br>
-                <div style="font-size: 1rem; font-weight: 900;">무드 선택
+                <div class="option-header">무드 선택
                     <button class="button" id="black" onclick="change_btn(event)"><img src="../../img/black.png" alt=""></button>
                     <button class="button" id="white" onclick="change_btn(event)"><img src="../../img/white.png" alt=""></button>
                 </div>
                 <br>
 
-                <span style="font-size: 0.8rem;">동영상</span>
+                <span class="option-header">동영상</span>
                 <div role="checkbox" class="option-box">
                     <hr>
                     <span>동영상 자동재생</span>
@@ -50,14 +50,14 @@
                         <span class="resolution-selector">
                             <select id="resolution-selector">
                                 <option value="resolution">1440p</option>
-                                <option value="resolution" selected>1080p</option>
+                                <option value="resolution" selected >1080p</option>
                                 <option value="resolution">720p</option>
                                 <option value="resolution">480p</option>
                             </select>
                         </span>
                 </div>
                 <br>
-                <span style="font-size: 0.8rem;">다운로드</span>
+                <span class="option-header">다운로드</span>
                 <div role="checkbox" class="option-box">
                     <hr>
                     <span>Wi-Fi에서만 다운로드</span>
@@ -82,12 +82,12 @@
                 <div role="checkbox" class="option-box">
                     <hr>
                     <span>다운로드 콘텐츠 모두 삭제</span>
-                    <button id="option-trashcan" onclick="confirmDelete()"><i class="fas fa-trash-can fa-xl"></i></button>
+                    <button id="option-trashcan" onclick="confirmDelete()"><i class="fas fa-trash-can fa-1x"></i></button>
                 </div>
             </div>
         <br>
         <div class="device-option-container">
-            <span><strong>계정 설정</strong></span>
+            <span class="option-header">계정 설정</span>
             <br>
             <span style="font-size: 0.8rem;">모든 프로필과 기기에 적용됩니다</span>
             <br>
