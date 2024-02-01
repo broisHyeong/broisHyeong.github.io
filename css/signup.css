@@ -61,6 +61,7 @@ input::placeholder{
   font-size: large;
   margin-top: 10%;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 a {
