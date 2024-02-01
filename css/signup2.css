@@ -4,16 +4,16 @@
   align-items: center;
 }
 
+.wrapper{
+  text-align: center;
+  margin-top: 200px;
+}
+
 .step {
   font-size: 20px;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.wrapper{
-  text-align: center;
-  margin-top: 100px;
 }
 
 #content1 {
