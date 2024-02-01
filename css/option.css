@@ -90,8 +90,8 @@ hr{
 
 #option-down-arrow{
     float: right;
-    padding-top: 12px;
-    padding-right: 20px;
+    padding-top: 5px;
+    padding-right: 6px;
     cursor: pointer;
     background-color: transparent;
     border: none;
