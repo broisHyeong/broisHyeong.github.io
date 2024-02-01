@@ -6,40 +6,43 @@
 
 .wrapper{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .step {
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
 #title {
-  font-size: 52px;
+  font-size: 45px;
   margin-left: 20px;
   margin-bottom: 10px;
 }
 
 div.grad {
   margin: auto;
-  padding: 10px;
-  color: white;
-  width:85vw;
-  height:30vh;
+  padding-left: 2%;
+  padding-top: 1%;
+  color: rgb(206, 225, 250);
+  width: 400px;
+  height:20vh;
   border-radius:20px;
   background: rgb(216, 221, 219);
-  background: linear-gradient(to right bottom, rgb(70, 25, 218), rgb(232, 39, 17));
+  background: linear-gradient(to right bottom, rgb(255, 133, 229), rgb(213, 252, 255));
   text-align: left;
-  font-size: 50px;
+  font-size: 25px;
 }
 
 #content {
-  font-size: 27px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin-top: 3%;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
 }
 
 hr {
@@ -60,8 +63,8 @@ span {
 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 5%;
 }
 
 .flex-item {
@@ -71,21 +74,56 @@ span {
 
 .flex-item img {
   border-radius: 50%;
-  width: 7vw;
-  height: 100;
+  width: 50px;
+  margin-inline-start: 30%;
+  margin-inline-end: 30%;
   border: 1px solid gray;
   margin-bottom: 10px;
 }
 
 .button .next {
-  margin-top: 20px;
-  background-color: red;
-  width: 90vw;
-  height: 10vh;
+  background-color: #00B0FF;
+  width: 280px;
+  height: 50px;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 40px;
   margin-bottom: 50px;
-  margin-left: 10px;
+  font-size: large;
+  margin-top: 10%;
+  border-radius: 30px;
+}
+@media screen and (max-width: 426px) {
+
+  #title {
+    font-size: 22px;
+  }
+  div.grad {
+    padding-left: 5%;
+    padding-top: 1%;
+    width: 300px;
+    height:30vh;
+    font-size: 20px;
+  }
+  #content {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+  }
+  .flex-item img {
+    width: 35px;
+  }
+  .button .next {
+    background-color:  #00B0FF;
+    width: 150px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
 }

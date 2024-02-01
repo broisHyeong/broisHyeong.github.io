@@ -25,19 +25,20 @@ body {
 }
 
 #content1 {
-  font-size: 52px;
+  font-size: 45px;
 }
 
 #content2 {
-  font-size: 30px;
+  font-size: 20px;
+  padding-bottom: 5%;
 }
 
 #content3 {
-  font-size: 28px;
+  font-size: 23px;
 }
 
 #content4 {
-  font-size: 28px;
+  font-size: 23px;
   font-weight: bold;
 }
 
@@ -50,14 +51,16 @@ input::placeholder{
   font-size: 20px;
 }
 .button .next {
-  background-color: red;
-  width: 300px;
+  background-color: #00B0FF;
+  width: 280px;
   height: 50px;
   color: white;
   border: none;
   border-radius: 5px;
   margin-bottom: 50px;
   font-size: large;
+  margin-top: 10%;
+  border-radius: 30px;
 }
 
 a {
@@ -111,7 +114,7 @@ a {
   }
   
   .button .next {
-    background-color: red;
+    background-color: #00B0FF;
     width: 130px;
     height: 35px;
     color: white;
