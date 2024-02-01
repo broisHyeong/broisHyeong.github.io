@@ -60,11 +60,8 @@
 .genre_box p {
   padding: 3px 5px;
   font-size: 16px;
-  font-weight: 900;
   text-align: center;
-  border-style: inset;
-  border-width: 0.5%;
-  border-color: var(--color-main-blue);
+  border: 2px solid var(--color-main-blue);
   border-radius: 8px;
 }
 
@@ -100,14 +97,11 @@
   }
 
   .genre_box p {
-    padding: 2px 3px;
+    padding: 3px;
     font-size: 12px;
-    font-weight: 900;
     text-align: center;
-    border-style: inset;
-    border-width: 0.5%;
-    border-color: var(--color-main-blue);
-    border-radius: 8px;
+    border: 1px solid  var(--color-main-blue);
+    border-radius: 5px;
   }
   
 }

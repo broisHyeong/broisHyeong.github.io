@@ -6,7 +6,7 @@ const menubarBody = document.querySelector('.menubar');
 btnBlack.addEventListener("click", (e) => {
     document.body.style.backgroundColor = "black";
     document.body.style.color = "white";
-    menubarBody.style.backgroundColor = "black";
+    menubarBody.style.backgroundColor = "#444";
     console.log("black");
 });
 
