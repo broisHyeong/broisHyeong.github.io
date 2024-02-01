@@ -58,8 +58,7 @@ hr{
     border: 1px solid rgba(128,128,128,0.4);
     border-radius: 8px;
     background-color: white;
-    width: z;
-    margin: auto;
+    margin-bottom: 80px;
 }
 
 .option-box{
@@ -127,6 +126,7 @@ hr{
 @media (max-width: 426px){
     .device-option-container{
         width: 95%;
+        margin-bottom: 45px;
     }
     #option-title{
         font-size: medium;
