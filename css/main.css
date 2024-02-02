@@ -16,6 +16,7 @@ img {
   font-weight: 500;
 }
 
+
 #main_header {
   position: fixed;
   top: 0;
@@ -28,7 +29,12 @@ img {
   box-shadow: none;
   z-index: 10;
 }
-
+/* 스크롤바 전체 영역 */
+::-webkit-scrollbar {
+  width: 0px;  /* 세로축 스크롤바 폭 너비 */
+  height: px;  /* 가로축 스크롤바 폭 너비 */
+  background-color: aqua;
+}
 /* 위에서부터 아래 순서로 작성 */
 /* 상단 이미지 */
 .main {
