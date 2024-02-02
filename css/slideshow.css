@@ -189,7 +189,7 @@ input[type="radio"] {
 
 @media screen and (max-width: 426px) {
   .js-slider {
-    height: 550px;
+    min-height: 550px;
   }
   
   .js-slider_img {
