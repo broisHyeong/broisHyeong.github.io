@@ -31,9 +31,9 @@ img {
 }
 /* 스크롤바 전체 영역 */
 ::-webkit-scrollbar {
-  width: 0px;  /* 세로축 스크롤바 폭 너비 */
-  height: px;  /* 가로축 스크롤바 폭 너비 */
-  background-color: aqua;
+  width: 0px;  
+  height: 2px;  
+  background-color: #00B0FF;
 }
 /* 위에서부터 아래 순서로 작성 */
 /* 상단 이미지 */
