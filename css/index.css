@@ -39,7 +39,7 @@ input::placeholder{
   font-size: 30px;
 }
 
-button {
+.start {
   background-color: red;
   color: white;
   border: none;
@@ -48,6 +48,7 @@ button {
   height: 7vh;
   margin-top: 25px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .container-top2 {
@@ -85,8 +86,8 @@ button {
 }
 
 #image img{
-  width: 20vw;
-  height: 20vh;
+  width: 200px;
+  height: 200px;
 }
 
 .grad-content{
@@ -207,8 +208,8 @@ font-size: 30px;
 }
 
 #child {
-  width: 70vw;
-  height: 80vh;
+  width: 800px;
+  height: 700px;
 }
 
 .container-middle4 .first {
@@ -229,14 +230,14 @@ font-size: 30px;
 }
 
 #save {
-  width: 90vw;
+  width: 50vw;
   /* position: relative; */
 }
 
 #download {
   border: 2px solid gray;
   border-radius: 10px;
-  width: 60vw;
+  width: 700px;
   height: 15vh;
   /* position: absolute; */
   display: flex;
@@ -250,9 +251,9 @@ font-size: 30px;
 
 #content {
   padding: 10px;
-  padding-top: 13px;
+  padding-top: 30px;
   padding-left: 30px;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 #content p {
@@ -285,9 +286,28 @@ li {
   border: none;
   width: 80vw;
   height: 15vh;
-  font-size: 45px;
+  font-size: 30px;
   text-align:left;
   padding-left: 20px;
+  /* position: absolute; */
+  border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.q_list:hover{
+  opacity: 0.7;
+}
+
+.q_list .add {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border: none;
+  z-index: 2;
+  width: 10px;
+  padding-left: 100px;
 }
 
 .answer {
@@ -295,8 +315,8 @@ li {
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 35px;
-  text-align:left;
+  font-size: large;
+  text-align:center;
   width: 76vw;
   padding: 20px;
   display: none;
@@ -373,15 +393,16 @@ li {
     background: none;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid rgb(207, 202, 202);
+    font-size: 20px;
   }
   
   input::placeholder{
     color: rgb(207, 202, 202);
     padding-left: 10px;
-    font-size: medium;
+    font-size: 20px;
   }
   
-  button {
+  .start {
     background-color: red;
     color: white;
     border: none;
@@ -427,8 +448,9 @@ li {
     align-items: center;
   }
 
-  #image img {
-    margin-right: 20px;
+  #image img{
+    width: 150px;
+    height: 150px;
   }
 
   
@@ -542,8 +564,8 @@ li {
   }
   
   #child {
-    width: 70vw;
-    height: 70vh;
+    width: 350px;
+    height: 400px;
   }
 
   .container-middle4 .first {
@@ -608,11 +630,12 @@ li {
     background-color: rgb(67, 64, 64);
     color: white;
     border: none;
-    width: 80vw;
-    height: 15vh;
+    width: 400px;
+    height: 80px;
     font-size: large;
     text-align:left;
     padding-left: 20px;
+    margin-right: 35px;
   }
   
   .answer {
