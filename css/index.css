@@ -48,6 +48,7 @@ button {
   height: 7vh;
   margin-top: 25px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 .container-top2 {
@@ -85,8 +86,8 @@ button {
 }
 
 #image img{
-  width: 20vw;
-  height: 20vh;
+  width: 200px;
+  height: 200px;
 }
 
 .grad-content{
@@ -207,8 +208,8 @@ font-size: 30px;
 }
 
 #child {
-  width: 70vw;
-  height: 80vh;
+  width: 800px;
+  height: 700px;
 }
 
 .container-middle4 .first {
@@ -229,14 +230,14 @@ font-size: 30px;
 }
 
 #save {
-  width: 90vw;
+  width: 50vw;
   /* position: relative; */
 }
 
 #download {
   border: 2px solid gray;
   border-radius: 10px;
-  width: 60vw;
+  width: 700px;
   height: 15vh;
   /* position: absolute; */
   display: flex;
@@ -285,7 +286,7 @@ li {
   border: none;
   width: 80vw;
   height: 15vh;
-  font-size: 45px;
+  font-size: 30px;
   text-align:left;
   padding-left: 20px;
 }
@@ -295,8 +296,8 @@ li {
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 35px;
-  text-align:left;
+  font-size: large;
+  text-align:center;
   width: 76vw;
   padding: 20px;
   display: none;
@@ -427,8 +428,9 @@ li {
     align-items: center;
   }
 
-  #image img {
-    margin-right: 20px;
+  #image img{
+    width: 150px;
+    height: 150px;
   }
 
   
@@ -542,8 +544,8 @@ li {
   }
   
   #child {
-    width: 70vw;
-    height: 70vh;
+    width: 350px;
+    height: 400px;
   }
 
   .container-middle4 .first {
