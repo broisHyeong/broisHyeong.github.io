@@ -1,5 +1,13 @@
-body {
-  margin: 10px; 
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  font-family: 'BMJUA', sans-serif;
 }
 
 .step {
@@ -46,6 +54,7 @@ body {
   width: 600px;
   height: 60px;
   font-size: 30px;
+  padding-left: 15px;
 }
 
 input::placeholder{
