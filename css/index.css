@@ -37,8 +37,8 @@
 }
 
 #form {
-  width: 80vw;
-  height: 8vh;
+  width: 600px;
+  height: 50px;
   background: none;
   background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid rgb(207, 202, 202);
@@ -219,6 +219,10 @@ font-size: 30px;
   align-items: center;
 }
 
+#childimg img {
+  object-fit: cover;
+}
+
 #child {
   width: 800px;
   height: 700px;
@@ -396,7 +400,7 @@ li {
   
   #form {
     width: 80vw;
-    height: 10vh;
+    height: 8vh;
     background: none;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px solid rgb(207, 202, 202);
@@ -405,8 +409,6 @@ li {
   
   input::placeholder{
     color: rgb(207, 202, 202);
-    padding-left: 10px;
-    font-size: 20px;
   }
   
   .start {

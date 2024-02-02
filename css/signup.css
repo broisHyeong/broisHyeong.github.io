@@ -79,11 +79,7 @@ a {
 }
 
 @media screen and (max-width: 426px) {
-  body {
-    margin: 10px;
-  }
   #container {
-    border: solid 1px black;
     padding-left: 20px;
     display: flex;
     justify-content: center;
@@ -114,12 +110,15 @@ a {
   
   #form {
     width: 60vw;
-    height: 8vh;
+    height: 30px;
     margin: -50%;
+    font-size: 14px;
   }
+
   input::placeholder{
-    font-size: 15px;
+    font-size: 14px;
   }
+  
   a {
     font-size: 12px;
   }
