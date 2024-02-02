@@ -174,36 +174,50 @@ font-size: 30px;
   display: none;
 }
 
-#watchimg #mac {
+#watchimg {
   position: relative;
-  margin-left: 40px;
-  margin-top: 30px;
-  width:80vw;
-  height:43vh;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+#watchimg #mac {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 50px;
+  margin-top: 15px;
+  width: 500px;
+  height:400px;
+  z-index: 1;
 }
 
 #watchimg #gif {
   position: absolute;
-  width: 75vw;
-  height: 27vh;
-  left: 60px;
-  top: 1355px;
+  top: 7%;
+  left: 11%;
+  width: 470px;
+  height: 250px;
+  z-index: 2;
 }
 
 #watchimg #ipad {
   position: absolute;
-  width: 25vw;
-  height: 25vh;
-  left: 300px;
-  top: 1460px;
+  width: 180px;
+  height: 200px;
+  z-index: 3;
+  right: 3%;
+  bottom: 0%
 }
 
 #watchimg #iphone {
   position: absolute;
-  width: 20vw;
-  height: 23vh;
-  left: 20px;
-  top: 1485px;
+  width: 120px;
+  height: 200px;
+  z-index: 3;
+  left: 5%;
+  bottom: -5.5%;
 }
 
 .child_explain {
@@ -528,7 +542,7 @@ li {
     display: none;
   }
   
-  #watchimg #mac {
+  /* #watchimg #mac {
     position: relative;
     margin-left: 40px;
     margin-top: 30px;
@@ -558,6 +572,51 @@ li {
     height: 23vh;
     left: 20px;
     top: 1485px;
+  } */
+
+  #watchimg {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: white;
+  }
+  
+  #watchimg #mac {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 15px;
+    width: 300px;
+    height:200px;
+    z-index: 1;
+  }
+  
+  #watchimg #gif {
+    position: absolute;
+    top: 7%;
+    left: 11%;
+    width: 270px;
+    height: 50px;
+    z-index: 2;
+  }
+  
+  #watchimg #ipad {
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    z-index: 3;
+    right: 3%;
+    bottom: 0%
+  }
+  
+  #watchimg #iphone {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    z-index: 3;
+    left: 5%;
+    bottom: -5.5%;
   }
   
   .child_explain {
