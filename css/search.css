@@ -60,7 +60,7 @@
 
 .genre_box:hover {
   cursor: pointer;
-  opacity: 0.2;
+  opacity: 0.6;
   box-shadow: 0px 8px 6px -6px #0c0b15;
   transform: scale(1.3);
 }
