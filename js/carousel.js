@@ -6,26 +6,17 @@ const $cellList = document.querySelectorAll(".carousel_cell");
 const $prevButton = document.querySelector(".prev-button");
 const $nextButton = document.querySelector(".next-button");
 
+let $imgList = document.querySelectorAll(".carousel_img");
+let carouselStyle = window.getComputedStyle($carousel);
+let carouselWidth = parseFloat(carouselStyle.getPropertyValue("width"));
+
+
 // 이미지 크기 계산
-const $imgList = document.querySelectorAll(".carousel_img");
-const carouselStyle = window.getComputedStyle($carousel);
-const carouselWidth = parseFloat(carouselStyle.getPropertyValue("width"));
+function updateImageSize() {
+  $imgList = document.querySelectorAll(".carousel_img");
+  carouselStyle = window.getComputedStyle($carousel);
+  carouselWidth = parseFloat(carouselStyle.getPropertyValue("width"));
 
-$imgList.forEach(img => {
-  img.style.width = `${carouselWidth}px`;
-  img.style.height = "500px";
-});
-$cellList.forEach(cell => {
-  cell.style.width = `${carouselWidth}px`;
-});
-
-//창 크기 변하면 같이 변경되도록
-window.addEventListener("resize", function () {
-  const $imgList = document.querySelectorAll(".carousel_img");
-  const carouselStyle = window.getComputedStyle($carousel);
-  const carouselWidth = parseFloat(carouselStyle.getPropertyValue("width"));
-  // console.log(`${carouselWidth}`);
-  
   $imgList.forEach(img => {
     img.style.width = `${carouselWidth}px`;
     img.style.height = "500px";
@@ -33,7 +24,16 @@ window.addEventListener("resize", function () {
   $cellList.forEach(cell => {
     cell.style.width = `${carouselWidth}px`;
   });
-});
+}
+
+//창 크기 변하면 같이 변경되도록
+function handleResize() {
+  updateImageSize();
+}
+
+handleResize();
+
+window.addEventListener("resize", handleResize);
 
 // 다음 이미지로 넘기기
 const nextEvent = () => {

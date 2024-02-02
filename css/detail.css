@@ -66,6 +66,7 @@ p {
   font-size: 30px;
   color: var(--color-main-blue);
   display: none;
+  cursor: pointer;
 }
 
 .heart_btn1 i {

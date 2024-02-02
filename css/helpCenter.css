@@ -2,16 +2,15 @@
 @import url(./default.css);
 
 .helpCenter_Box{
-    background-color: white;
     background-position: center;
     background-size: cover;
     height: 30rem;
-    padding: 0 1.25rem;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .helpCenter_inner {
+    width: 100%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -57,9 +56,8 @@ summary{
 }
 .category_box{
     padding: 12px 12px;
-    border: 1px solid rgba(128,128,128,0.4);
+    border: 1px solid rgb(125,125,125);
     border-radius: 8px;
-    background-color: white;
     width: 75%;
     margin-top: -15%;
     margin-bottom: 15%;
