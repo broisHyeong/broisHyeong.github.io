@@ -31,6 +31,12 @@
 
 @media screen and (max-width: 426px) {  
 
+  .contents_img {
+    width: 100%;
+    height: 150px;
+    margin-left: 1vw;
+  }
+
   .contents_img img {
     width: 100px;
     height: 150px;

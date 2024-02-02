@@ -32,19 +32,18 @@
   color: gray;
 } */
 
-.container {
-  height: 700px;
+#container {
+  /* min-height: 700px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  border: 1.5px solid #095578;
+  margin-top: 100px;
+  padding-top: 20px 10px 0px 10px;
+  border: 2px solid #095578;
   border-radius: 10px;
-  margin-bottom: 0px;
-  box-shadow: 0 0 10px 1px;
+  margin-bottom: 80px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 #name {
@@ -55,12 +54,10 @@
 }
 
 hr {
-  color: #095578;
   width:100% ;
   border: 0;
   height: 3px;
-
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(60, 108, 133, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(60, 108, 133, 0.75) 20%, rgba(60, 108, 133, 0.75) 80%, rgba(0, 0, 0, 0) 90%);
 }
 
 .list-all-container-content {
@@ -83,7 +80,7 @@ hr {
   padding: 15px;
   padding-top: 28px;
   text-align: center;
-  box-shadow: 7px 7px 8px -3px #423e71;
+  box-shadow: 7px 7px 8px -3px rgba(9,85,120,0.3);
 }
 
 /* .list{
@@ -125,8 +122,8 @@ hr {
   margin-top: 13px;
   background-color: #86c9e8;
   color: white;
+  padding: 3px 10px;
   border-radius: 7px;
-  padding: 3px;
   cursor: pointer;
   border: 2px solid #095578;
 }
@@ -137,12 +134,11 @@ hr {
 }
 
 #profile-edit{
-  margin: px;
+  margin: 10px;
   background-color: #86c9e8;
   color: white;
   border-radius: 7px;
-  padding: 5px;
-  padding-bottom: 3px;
+  padding: 3px 10px;
   cursor: pointer;
   border: 2px solid #095578;
 }
@@ -163,6 +159,7 @@ hr {
 
 .tmp_img{
   border-radius:20%;
+  background-color: white;
   border: 2px solid #095578;
   margin: 20px;
   margin-top: 0px;
