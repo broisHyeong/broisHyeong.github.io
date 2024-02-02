@@ -53,15 +53,24 @@ hr{
     transition : all  0.22s ease-in;
 }
 
-.device-option-container{
+.device-option-container1{
     padding: 12px 12px;
     border: 1px solid #00B0FF ;
     border-radius: 8px;
     background-color: white;
-    width: z;
     margin: auto;
     margin-top: 2%;
 }
+
+.device-option-container2{
+    padding: 12px 12px;
+    border: 1px solid #00B0FF ;
+    border-radius: 8px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 20%;
+}
+
 
 .option-box{
     margin-bottom: 10px;
