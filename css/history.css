@@ -1,0 +1,101 @@
+@import url(./default.css);
+@import url(./footer.css);
+
+#like-container{
+    text-align: center;
+}
+
+.like-header{
+    padding: relative;
+}
+
+#like-logout{
+    position: absolute;
+    right: 15%;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: white;
+    border-radius: 5%;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+#like-logout:hover{
+    background-color: white;
+    color: black;
+}
+
+.like-list{
+    padding-top: 100px;
+}
+
+.like-list-contents{
+    img{
+        width: 200px;
+        height: 300px;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(3, 210px);
+    justify-content: center;
+}
+
+.download-list-contents{
+    img{
+        width: 200px;
+        height: 300px;
+    }
+
+    display: grid;
+    grid-template-columns: repeat(3, 210px);
+    justify-content: center;
+}
+
+.like-list h1{
+    padding: 20px 0;
+}
+
+.like-download-list h2{
+    padding: 20px 0;
+}
+
+.more {
+  border: 2px dashed #095578;
+  background-color: #e7f2f8;
+  margin: auto;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.more:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 426px) {  
+
+    .like-list-contents{
+        img{
+            width: 100px;
+            height: 150px;
+        }
+    
+        display: grid;
+        grid-template-columns: repeat(3, 105px);
+        justify-content: center;
+    }
+    .download-list-contents{
+        img{
+            width: 100px;
+            height: 150px;
+        }
+    
+        display: grid;
+        grid-template-columns: repeat(3, 105px);
+        justify-content: center;
+    }
+}

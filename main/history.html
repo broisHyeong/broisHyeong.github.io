@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity SPACE - 최근 기록</title>
+    <link rel="stylesheet" href="../css/history.css">
+    <script src="https://kit.fontawesome.com/fccb424d55.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="empty_header">
+        <iframe src="../main/backend/header.html" class="header" frameborder="0" width="100%" height="60px"></iframe>
+    </div>
+    <div class="like-container" id="like-container">
+        <div class="like-header">
+            <a class="like-logout-link" type="button" id="like-logout" onclick="confirmLogout()">
+                <span>로그아웃</span>
+            </a>
+        </div>
+        <!-- like contents -->
+        <div class="like-list">
+            <h1>최근 기록
+                <i class="fas fa-clock-rotate-left"></i>
+            </h1>
+            <div class="like-list-contents">
+                <a href="../main/detail_wish.html"><img src="../img/wish.jpg" alt=""></a>
+                <a href="#"><img src="../img/parasite(movie).jpg" alt=""></a>
+                <a href="../main/detail_insideout.html"><img src="../img/insideout.jpg" alt=""></a>
+                <a href="#"><img src="../img/movieslamdunk.jpg" alt=""></a>
+                <a href="#"><img src="../img/realsteel(movie).jpg" alt=""></a>
+                <a href="#"><img src="../img/moviebossbaby.jpg" alt=""></a>
+                <a href="#"><img src="../img/moviejob.jpg" alt=""></a>
+                <a href="#"><img src="../img/moviekiki.jpg" alt=""></a>
+                <a href="#"><img src="../img/inception(movie).jpg" alt=""></a>
+            </div>
+        </div>
+        <br>
+        <button class="more">더보기 + </button>
+        <!-- download contents -->
+        <!-- <div class="like-download-list">
+            <h2>다운로드 컨텐츠
+                <i class="fas fa-download"></i>
+            </h2>
+            <div class="download-list-contents">
+                <a href="../main/detail_seoulspring.html"><img src="../img/seoulspring.jpg" alt=""></a>
+                <a href="#"><img src="../img/avengers(movie).jpg" alt=""></a>
+                <a href="../main/detail_alien.html"><img src="../img/alien.jpg" alt=""></a>
+            </div>
+        </div>
+    </div> -->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <picture class="footer-logo">
+                <img src="../img/Cloud_Download.png" alt="infinite_space_logo" width="80px">
+            </picture>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <i class="fas fa-globe" id="footer-globe"></i>
+                    <span class="language-selector">
+                        <select id="language-selector">
+                            <option value="korean">한국어</option>
+                            <option value="english">English</option>
+                        </select>
+                    </span>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="link" type="button">
+                        <span>인피니트 스페이스 이용약관</span>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="link" type="button">
+                        <span>개인정보 처리방침</span>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="../main/helpCenter.html" class="link" type="button">
+                        <span>고객센터</span>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="link" type="button">
+                        <span>관심 기반 광고</span>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="link" type="button">
+                        <span>개인정보 처리방침 부속서</span>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="../../index.html" class="link" type="button">
+                        <span>인피니트 스페이스 소개</span>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer-text">
+                "인피니트스페이스코리아 유한책임회사 | 대표자: 임민형 | 부산광역시 남구 용소로 45, 3층 (우편번호: 016236) | Email: help@infiniteSPACE.kr |
+                연락처: 080 811 1512 | 사업자등록번호: 123-45-6789 | 통신판매업 신고번호: 제2021-부경-0555호 |"
+                <br>
+                "비디오물배급업 신고번호: 제2010-16호 | 호스팅서비스 사업자: ice"
+                <br>
+                <br>
+                "인피니트 스페이스의 콘텐츠는 서비스 여부에 따라 달라질 수 있습니다."
+                <br>
+                "© 2024 infiniteSPACE and its related entities. All Rights Reserved."
+            </p>
+        </div>
+    </footer>
+    <div id="modebutton">
+        <button class="button" id="black"><img src="../../img/black.png" alt=""></button>
+        <button class="button" id="white"><img src="../../img/white.png" alt=""></button>
+    </div>
+    <iframe src="../main/backend/menubar.html" class="menubar" frameborder="0" width="100%" height="50px"></iframe>
+    <script src="../js/modecolor.js"></script>
+    <script src="../js/history.js"></script>
+</body>
+
+</html>
