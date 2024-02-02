@@ -577,46 +577,46 @@ li {
   #watchimg {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 250px;
     margin: 0 auto;
-    background-color: white;
   }
   
   #watchimg #mac {
     position: absolute;
     left: 0;
     top: 0;
-    margin-top: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
     width: 300px;
-    height:200px;
+    height: 250px;
     z-index: 1;
   }
   
   #watchimg #gif {
     position: absolute;
-    top: 7%;
-    left: 11%;
-    width: 270px;
-    height: 50px;
+    top: 4%;
+    left: 4%;
+    width: 278px;
+    height: 155px;
     z-index: 2;
   }
   
   #watchimg #ipad {
     position: absolute;
-    width: 180px;
-    height: 200px;
+    width: 90px;
+    height: 133px;
     z-index: 3;
-    right: 3%;
-    bottom: 0%
+    right: -5%;
+    bottom: 5%
   }
   
   #watchimg #iphone {
     position: absolute;
-    width: 120px;
-    height: 200px;
+    width: 60px;
+    height: 120px;
     z-index: 3;
-    left: 5%;
-    bottom: -5.5%;
+    left: -3%;
+    bottom: 0%;
   }
   
   .child_explain {
