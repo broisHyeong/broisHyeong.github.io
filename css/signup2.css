@@ -54,11 +54,7 @@ li {
 }
 
 @media screen and (max-width: 426px) {
-  body {
-    margin: 10px;
-  }
   #container {
-    border: solid 1px black;
     padding-left: 20px;
     display: flex;
     justify-content: center;
@@ -72,6 +68,11 @@ li {
   #content1 {
     font-size: 22px;
     margin-bottom: -30px;
+  }
+
+  .wrapper p {
+    display: block;
+    margin-top: 10px;
   }
   
   li {
