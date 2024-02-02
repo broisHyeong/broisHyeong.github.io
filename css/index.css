@@ -450,7 +450,7 @@ li {
     height:24vh;
     border-radius:10px;
     text-align: left;
-    background: linear-gradient(0deg, rgb(59, 20, 186), rgb(210, 34, 15));
+    background: linear-gradient(to right bottom, rgb(64, 195, 195), rgb(83, 8, 154));
     font-size: 20px;
     z-index: 1;
     display: flex;
