@@ -110,6 +110,22 @@
 
   .genre_box {
     margin: 3px;
+    transition: all 0.2s linear;
+  }
+
+  .genre_box:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    box-shadow: 0px 8px 6px -6px #0c0b15;
+    transform: scale(1);
+  }
+
+  .genre_box.active {
+    margin: 3px;
+    background-color: #00B0FF;
+    color: white;
+    box-shadow: none;
+    border-radius: 3px;
   }
 
   .genre_box p {
