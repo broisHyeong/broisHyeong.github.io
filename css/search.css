@@ -125,6 +125,7 @@
     background-color: #00B0FF;
     color: white;
     box-shadow: none;
+    border-radius: 3px;
   }
 
   .genre_box p {
