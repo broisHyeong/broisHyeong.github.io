@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="../css/myprofile.css">
   <title>My Profile</title>
 </head>
+
 <body>
   <iframe src="./backend/header.html" class="header" frameborder="0" width="100%" height="60px"></iframe>
   <!-- <div class="container" id="container">
@@ -20,39 +22,44 @@
       </div>
     </div> -->
 
-    <div class="container">
-      <form id="tmp1">
-        <div class="tmp_img">
-          <img src="../img/profile.jpg" alt="profile_img" id="tmp_profile_img">
-        </div>
-          <div class="tmp_profile">
-            <div id="name">오서진</div>
-            <div id = "profile-logout"><a onclick="confirmLogout()">로그아웃</a></div>
-            <div id = "profile-edit"><a onclick="confirmEdit()">프로필 편집</a></div>
-          </div>
-        </form>
-        <hr>
-    
-        <div class="list-all-container-content">
-          <div class="list-content1">
-            <div class="list"><a href="backend/option.html">설정</a></div>
-            <div class="list"><a href="">시청 내역</a></div>
-          </div>
-          <div class="list-content2">
-            <div class="list"><a href="">리뷰 모아보기</a></div>
-            <div class="list"><a href="backend/option.html">공지사항</a></div>
-          </div>
-          <div class="list-content3">
-            <div class="list"><a href="helpCenter.html">고객 센터</a></div>
-            <div class="list"><a href="backend/option.html">서비스 이용 약관</a></div>
-          </div>
-          <!-- <div class="list"><a href="backend/option.html">공지사항</a></div>
+  <div class="container" id="container">
+    <form id="tmp1">
+      <div class="tmp_img">
+        <img src="../img/profile.jpg" alt="profile_img" id="tmp_profile_img">
+      </div>
+      <div class="tmp_profile">
+        <div id="name">오서진</div>
+        <div id="profile-logout"><a onclick="confirmLogout()">로그아웃</a></div>
+        <div id="profile-edit"><a onclick="confirmEdit()">프로필 편집</a></div>
+      </div>
+    </form>
+    <hr>
+
+    <div class="list-all-container-content">
+      <div class="list-content1">
+        <div class="list"><a class="list_text" href="backend/option.html">설정</a></div>
+        <div class="list"><a class="list_text" href="#">시청 내역</a></div>
+      </div>
+      <div class="list-content2">
+        <div class="list"><a class="list_text" href="#">리뷰 모아보기</a></div>
+        <div class="list"><a class="list_text" href="backend/option.html">공지사항</a></div>
+      </div>
+      <div class="list-content3">
+        <div class="list"><a class="list_text" href="helpCenter.html">고객 센터</a></div>
+        <div class="list"><a class="list_text" href="backend/option.html">서비스 이용 약관</a></div>
+      </div>
+      <!-- <div class="list"><a href="backend/option.html">공지사항</a></div>
           <div class="list"><a href="backend/option.html">오픈소스라이센스</a></div> -->
-        </div>
     </div>
-    
-      
+  </div>
+  <div id="modebutton">
+    <button class="button" id="black"><img src="../../img/black.png" alt=""></button>
+    <button class="button" id="white"><img src="../../img/white.png" alt=""></button>
+  </div>
+  <iframe class="menubar" src="./backend/menubar.html" class="menubar" frameborder="0" width="100%"
+    height="50px"></iframe>
   <script src="../js/myprofile.js"></script>
-  <iframe src="./backend/menubar.html" class="menubar" frameborder="0" width="100%" height="50px"></iframe>
+  <script src="../js/modecolor_myprofile.js"></script>
 </body>
+
 </html>
